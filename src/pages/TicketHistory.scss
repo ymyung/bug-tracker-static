@@ -1,0 +1,353 @@
+.TicketHistory {
+    height: 90vh;
+    width: 100vw;
+
+    .TicketHistory-container {
+        display: flex;
+        flex-direction: column;
+
+
+        .TicketHistory-buttons-container {
+            height: 10vh;
+            background-color: rgb(26, 26, 26);
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            gap: 3rem;
+
+            .TicketHistory-button {
+                height: 2rem;
+                width: 7rem;
+                font-weight: bold;
+                font-size: 1.1rem;
+                border-radius: 10%;
+                cursor: pointer;
+                background-color: rgb(47, 165, 47);
+                text-decoration: none;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                color: black; 
+                border: 1px solid black;
+            }
+
+            .TicketHistory-button:active {
+                background-color: rgb(35, 119, 35);
+            }
+
+            .TicketHistory-button-bottom {
+                visibility: hidden;
+                opacity: 0;
+            }
+        }
+
+        .TicketHistory-body-container {
+            height: 80vh;
+            width: 100vw;
+            
+            .TicketHistory-body {
+                width: 90vw;
+                height: 70vh;
+                margin: auto;
+                margin-top: 2rem;
+                padding: 1rem;
+                display: flex;
+                flex-direction: column;
+
+                div {
+                    border-bottom: 1px solid rgb(110, 110, 110);
+                    flex: 1;
+                    align-items: center;
+                }
+
+                .TicketHistory-body-description {
+                    display: flex;
+                    flex-direction: column;
+                    gap: .5rem;
+                    flex: 3;
+                    align-items: flex-start;
+                    justify-content: center;
+                }
+
+                .TicketHistory-body-subcontainer {
+                    display: flex;
+                    justify-content: space-between;
+                    align-items: center;
+                }
+            }
+        }
+
+        .TicketHistory-tickets {
+            display: flex;
+            justify-content: center;
+            flex-direction: column;
+            height: 80vh;
+            padding: 1rem;
+            padding-top: 0;
+        
+            .TicketHistory-title-container {
+                display: flex;
+                justify-content: space-between;
+                align-items: center;
+                padding-top: .5rem;
+
+                .new-TicketHistory-container {
+                    width: 0;
+                }
+        
+                .TicketHistory-title-right {
+                    width: 25vw;
+                    margin-right: .5rem;
+                    display: flex;
+                    align-items: center;
+                    justify-content: flex-end;
+        
+                    .TicketHistory-search {
+                        width: 5.5rem;
+                        height: 1.5rem;
+                    }
+                }
+        
+                .TicketHistory-number-container {
+                    width: 30vw;
+                    display: flex;
+                    justify-content: center;
+                    text-align: center;
+        
+                    .TicketHistory-number {
+                        display: flex;
+                        justify-content: center;
+                        align-items: center;
+                        font-size: 1rem;
+                    }
+                }
+
+                .new-TicketHistory-container {
+                    width: 25vw;
+                    display: flex;
+                    justify-content: flex-start;
+                    margin-left: .5rem;
+                    
+                    .new-TicketHistory-backdrop {
+                        position: fixed;
+                        top: 0;
+                        left: 0;
+                        width: 100vw;
+                        height: 100vh;
+                        background: rgba(0, 0, 0, 0.5);
+                        backdrop-filter: blur(.1rem);
+                        z-index: 3;
+                        visibility: hidden;
+                        opacity: 0;
+                        transition: opacity .3s;
+                    }
+        
+                    .new-TicketHistory-modal {
+                        position: fixed;
+                        z-index: 4;
+                        position: absolute;
+                        visibility: hidden;
+                        opacity: 0;
+                        background-color: rgb(31, 31, 31);
+                        width: 80vw;
+                        height: 20vh;
+                        position: absolute;
+                        margin: auto;
+                        left: 0;
+                        right: 0;
+                        top: 0;
+                        bottom: 0;
+                        display: flex;
+                        flex-direction: column;
+                        justify-content: space-between;
+                        padding: .5rem 1rem 1rem 1rem;
+
+                        @media screen and (min-width: 768px) {
+                            width: 60vw;
+                        }
+        
+                        .new-TicketHistory-description {
+                            display: flex;
+                            flex-direction: column;
+                            gap: 1rem;
+                        }
+                    }
+                }
+
+                .file-TicketHistory-container {
+                    width: 25vw;
+                    display: flex;
+                    justify-content: flex-start;
+                    margin-left: .5rem;
+                    
+                    .new-TicketHistory-backdrop {
+                        position: fixed;
+                        top: 0;
+                        left: 0;
+                        width: 100vw;
+                        height: 100vh;
+                        background: rgba(0, 0, 0, 0.5);
+                        backdrop-filter: blur(.1rem);
+                        z-index: 3;
+                        visibility: hidden;
+                        opacity: 0;
+                        transition: opacity .3s;
+                    }
+        
+                    .new-TicketHistory-modal {
+                        position: fixed;
+                        z-index: 4;
+                        position: absolute;
+                        visibility: hidden;
+                        opacity: 0;
+                        background-color: rgb(31, 31, 31);
+                        width: 80vw;
+                        height: 20vh;
+                        position: absolute;
+                        margin: auto;
+                        left: 0;
+                        right: 0;
+                        top: 0;
+                        bottom: 0;
+                        display: flex;
+                        flex-direction: column;
+                        justify-content: space-between;
+                        padding: .5rem 1rem 1rem 1rem;
+
+                        @media screen and (min-width: 768px) {
+                            width: 60vw;
+                        }
+        
+                        .new-TicketHistory-description {
+                            display: flex;
+                            flex-direction: column;
+                            gap: 1rem;
+                        }
+                    }
+                }
+
+                .new-TicketHistory-open .new-TicketHistory-backdrop {
+                    visibility: visible;
+                    opacity: 1;
+                }
+        
+                .new-TicketHistory-open .new-TicketHistory-modal {
+                    visibility: visible;
+                    opacity: 1;
+                }
+
+                .file-TicketHistory-open .new-TicketHistory-backdrop {
+                    visibility: visible;
+                    opacity: 1;
+                }
+
+                .file-TicketHistory-open .new-TicketHistory-backdrop {
+                    visibility: visible;
+                    opacity: 1;
+                }
+            }
+        
+            .TicketHistory-left {
+                color: gray;
+                margin-right: 1rem;
+            }
+        
+            .TicketHistory-containers {
+                flex: 8;
+                padding: .5rem;
+                
+                .TicketHistory-container {
+                    display: flex;
+                    flex-direction: column;
+                    border: 1px solid gray;
+                    height: 12.5%;
+                    justify-content: space-around;
+                    text-decoration: none;
+                    color: white;
+        
+                    .TicketHistory-container-top {
+                        display: flex;
+                        flex-direction: row;
+                        width: 100%;
+        
+                        .TicketHistory-name {
+                            flex: 1;
+                            display: flex;
+                        }
+            
+                        .TicketHistory-comments {
+                            flex: 1;
+                            display: flex;
+                            cursor: pointer;
+
+                            .TicketHistory-right {
+                                text-decoration: underline;
+                            }
+                        }
+                    }
+        
+                    .TicketHistory-container-bottom {
+                        display: flex;
+        
+                        .TicketHistory-date {
+                            flex: 1;
+                            display: flex;
+                            align-items: center;
+                        }
+        
+                        .TicketHistory-file {
+                            flex: 1;
+                            display: flex;
+                            cursor: pointer;
+
+                            .TicketHistory-right {
+                                text-decoration: underline;
+                            }
+                        }
+                    }
+                }
+            }
+        
+            .TicketHistory-buttons {
+                flex: 1;
+                display: flex;
+                flex-direction: row;
+                justify-content: center;
+                align-items: center;
+                gap: 2rem;
+        
+                .TicketHistory-button {
+                    height: 2rem;
+                    width: 5rem;
+                    font-size: 1.2rem;
+                    font-weight: bold;
+                    cursor: pointer;
+                    border-radius: 10%;
+                }
+            }
+        
+            @media screen and (min-width: 768px) {
+                padding: 1rem 2rem 0 3rem;
+        
+                .TicketHistory-title-container {
+                    padding-top: 0;
+        
+                    .TicketHistory-title-right {
+                        .TicketHistory-search {
+                            width: 8rem;
+                        }
+                    }
+                    
+                    .TicketHistory-number-container {
+                        .TicketHistory-number {
+                            align-items: flex-start;
+                            font-size: 2rem;
+                            margin-right: 0;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+

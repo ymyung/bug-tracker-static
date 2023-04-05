@@ -1,0 +1,63 @@
+.dashboard {
+    .graph-buttons-container {
+        display: flex;
+        justify-content: flex-start;
+        flex-wrap: wrap;
+        gap: 1rem;
+        border-bottom: 1px solid white;
+        padding: 1rem;
+
+        .graph-button-date, .graph-button-priority, .graph-button-type, .graph-button-history {
+            margin: 0 auto;
+            height: 2.5rem;
+            min-width: 40vw;
+            padding: .5rem;
+            font-weight: bold;
+            font-size: 1.5rem;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            cursor: pointer;
+        }
+
+        .graph-button-date-on, .graph-button-priority-on, .graph-button-type-on, .graph-button-history-on {
+            margin: 0 auto;
+            height: 2.5rem;
+            min-width: 40vw;
+            padding: .5rem;
+            font-weight: bold;
+            font-size: 1.5rem;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            cursor: pointer;
+            background-color: wheat;
+        }
+
+        button:active {
+            background-color: wheat;
+        }
+
+        button:hover {
+            background-color: wheat;
+        }
+    }
+
+    @media screen and (min-width: 768px) {
+        .graph-buttons-container {
+            display: flex;
+            justify-content: center;
+            gap: 2rem;
+
+            .graph-button-date, .graph-button-priority, .graph-button-type, .graph-button-history {
+                margin: 0;
+                min-width: 8rem;
+            }
+
+            .graph-button-date-on, .graph-button-priority-on, .graph-button-type-on, .graph-button-history-on {
+                margin: 0;
+                min-width: 8rem;
+            }
+        }
+    }
+}

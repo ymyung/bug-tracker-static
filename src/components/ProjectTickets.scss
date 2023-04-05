@@ -1,0 +1,295 @@
+@keyframes transitionIn {
+    from {
+        opacity: 0;
+        transform: rotateX(-10deg);
+    }
+
+    to {
+        opacity: 1;
+        transform: rotateX(0);
+    }
+}
+
+.project-tickets {
+    display: flex;
+    flex-direction: column;
+    height: 70vh;
+    justify-content: space-between;
+    padding: 1rem;
+    padding-top: 0;
+    animation: transitionIn .75s;
+
+    .tickets-title-container {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding-top: .5rem;
+
+        .tickets-title-right {
+            width: 25vw;
+            margin-right: .5rem;
+            display: flex;
+            align-items: center;
+            justify-content: flex-end;
+
+            .tickets-search {
+                width: 5.5rem;
+                height: 1.5rem;
+            }
+        }
+
+        .tickets-number-container {
+            width: 20vw;
+            display: flex;
+            justify-content: center;
+            text-align: center;
+
+            .tickets-number {
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                font-size: 1rem;
+            }
+        }
+
+        .new-ticket-container {
+            width: 25vw;
+            display: flex;
+            justify-content: flex-start;
+            margin-left: .5rem;
+            
+            .new-ticket-backdrop, .remove-ticket-backdrop {
+                position: fixed;
+                top: 0;
+                left: 0;
+                width: 100vw;
+                height: 100vh;
+                background: rgba(0, 0, 0, 0.5);
+                backdrop-filter: blur(.1rem);
+                z-index: 3;
+                visibility: hidden;
+                opacity: 0;
+                transition: opacity .3s;
+            }
+
+            .new-ticket-modal, .remove-ticket-modal {
+                position: fixed;
+                z-index: 4;
+                position: absolute;
+                visibility: hidden;
+                opacity: 0;
+                background-color: rgb(31, 31, 31);
+                width: 80vw;
+                height: 60vh;
+                position: absolute;
+                margin: auto;
+                left: 0;
+                right: 0;
+                top: 0;
+                bottom: 0;
+                display: flex;
+                flex-direction: column;
+                justify-content: space-between;
+                padding: .5rem 1rem 1rem 1rem;
+
+                .modal-top {
+                    width: 100%;
+                    display: flex;
+                    justify-content: space-between;
+
+                    .modal-devs {
+                        width: 50%;
+                    }
+                }
+
+                .modal-middle {
+                    display: flex;
+                    justify-content: space-between;
+                    align-items: center;
+                    width: 100%;
+
+                    .modal-selected-user {
+                        font-size: 1.5rem;
+                        color: wheat;
+                    }
+                }
+
+                .button-container {
+                    width: 100%;
+                    display: flex;
+                    justify-content: flex-end;
+
+                    .remove-ticket {
+                        width: 6.5rem;
+                        height: 2rem;
+                        background-color: rgb(243, 52, 52);
+                        font-weight: bold;
+                        cursor: pointer;
+                    }
+                }
+
+                .new-ticket-input {
+                    width: 100%;
+                }
+
+                .new-ticket-date {
+                    display: flex;
+                    justify-content: space-between;
+                    align-items: flex-end;
+
+                    .new-ticket-save {
+                        width: 6rem;
+                        height: 2rem;
+                        background-color:rgb(47, 165, 47);
+                        cursor: pointer;
+                    }
+                }
+            }
+
+            .remove-ticket-modal {
+                padding: 1rem;
+            }
+
+            .new-ticket-left {
+                width: 6.5rem;
+                max-width: 35%;
+                height: 2rem;
+                background-color: rgb(47, 165, 47);
+                font-weight: bold;
+                cursor: pointer;
+            }
+
+            .new-ticket-right {
+                width: 6.5rem;
+                max-width: 65%;
+                height: 2rem;
+                background-color: rgb(243, 52, 52);
+                font-weight: bold;
+                cursor: pointer;
+            }
+
+            .new-ticket:active {
+                background-color: rgb(35, 119, 35);
+            }
+        }
+
+        .new-ticket-open .new-ticket-backdrop {
+            visibility: visible;
+            opacity: 1;
+        }
+
+        .new-ticket-open .new-ticket-modal {
+            visibility: visible;
+            opacity: 1;
+        }
+
+        .remove-ticket-open .remove-ticket-backdrop {
+            visibility: visible;
+            opacity: 1;
+        }
+
+        .remove-ticket-open .remove-ticket-modal {
+            visibility: visible;
+            opacity: 1;
+        }
+    }
+
+    .tickets-left {
+        color: gray;
+        margin-right: 1rem;
+    }
+
+    p {
+        font-size: .8rem;
+    }
+
+    .tickets-containers {
+        flex: 8;
+        padding: .5rem;
+        
+        .tickets-container {
+            display: flex;
+            flex-direction: column;
+            border: 1px solid gray;
+            height: 12.5%;
+            justify-content: space-around;
+            text-decoration: none;
+            color: white;
+
+            .tickets-container-top {
+                display: flex;
+                flex-direction: row;
+                width: 100%;
+                margin-left: .5rem;
+                margin-right: .5rem;
+
+                .tickets-name {
+                    flex: 1;
+                    display: flex;
+                }
+    
+                .tickets-role {
+                    flex: 1;
+                    display: flex;
+                }
+            }
+
+            .tickets-container-bottom {
+                display: flex;
+                margin-left: .5rem;
+                margin-right: .5rem;
+
+                .tickets-email {
+                    flex: 1;
+                    display: flex;
+                    align-items: center;
+                }
+
+                .tickets-priority {
+                    flex: 1;
+                    display: flex;
+                }
+            }
+        }
+    }
+
+    .tickets-container:hover {
+        background-color: rgb(46, 46, 46);
+    }
+
+    .tickets-buttons {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    @media screen and (min-width: 768px) {
+        height: 80vh;
+        padding-right: 2rem;
+
+        .tickets-title-container {
+            padding-top: 0;
+
+            .tickets-title-right {
+                .tickets-search {
+                    width: 8rem;
+                }
+            }
+
+            .new-ticket-container {
+                .new-ticket-modal {
+                    width: 40vw;
+                    height: 50vh;
+                }
+            }
+            
+            .tickets-number-container {
+                .tickets-number {
+                    align-items: flex-start;
+                    font-size: 2rem;
+                    margin-right: 0;
+                }
+            }
+        }
+    }
+}

@@ -1,0 +1,14 @@
+*, *::before *::after {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.body {
+    padding-top: 10vh;
+    min-height: 100vh;
+    background-color: black;
+    color: white;
+    width: 100%;
+    overflow: hidden;
+}

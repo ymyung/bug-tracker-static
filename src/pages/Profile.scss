@@ -1,0 +1,150 @@
+@keyframes transitionIn {
+    from {
+        opacity: 0;
+        transform: rotateX(-10deg);
+    }
+
+    to {
+        opacity: 1;
+        transform: rotateX(0);
+    }
+}
+
+.profile {
+    width: 100vw;
+    height: 90vh;
+    margin: auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    animation: transitionIn .75s;
+
+    .profile-container {
+        background-color: rgb(37, 37, 37);
+        min-width: 20rem;
+        height: 18rem;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        padding: 2rem;
+        gap: 1rem;
+        border-radius: 10%;
+        font-size: 2rem;
+
+        .profile-email-container {
+            .profile-email {
+                font-size: 1.5rem;
+            }
+        }
+
+        .profile-image {
+            width: 5rem;
+            height: 5rem;
+            border-radius: 50%;
+            object-fit: cover;
+            display: flex;
+            background-color: white;
+            color: black;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            font-weight: bold;
+        }
+
+        .profile-password-container {
+            .profile-backdrop {
+                position: fixed;
+                top: 0;
+                left: 0;
+                width: 100vw;
+                height: 100vh;
+                background: rgba(0, 0, 0, 0.5);
+                backdrop-filter: blur(.1rem);
+                z-index: 3;
+                visibility: hidden;
+                opacity: 0;
+                transition: opacity .3s;
+            }
+
+            .profile-modal {
+                position: fixed;
+                z-index: 4;
+                position: absolute;
+                visibility: hidden;
+                opacity: 0;
+                background-color: rgb(31, 31, 31);
+                width: 80vw;
+                height: 15vh;
+                position: absolute;
+                margin: auto;
+                left: 0;
+                right: 0;
+                top: 0;
+                bottom: 0;
+                display: flex;
+                flex-direction: column;
+                justify-content: space-between;
+                padding: .5rem 1rem 1rem 1rem;
+                display: flex;
+                align-items: center;
+                justify-content: flex-start;
+
+                input {
+                    width: 95%;
+                    margin: 1rem;
+                }
+
+                button {
+                    width: 8rem;
+                }
+
+                div {
+                    font-size: 1.5rem;
+                }
+
+                .password-button {
+                    height: 2rem;
+                    width: 8rem;
+                    font-weight: bold;
+                    border-radius: 10%;
+                    background-color: rgb(47, 165, 47);
+                    cursor: pointer;
+                }
+            }
+
+            .profile-password {
+                height: 2rem;
+                width: 8rem;
+                font-weight: bold;
+                border-radius: 10%;
+                background-color: rgb(47, 165, 47);
+                cursor: pointer;
+            }
+
+            .profile-password:active {
+                background-color: rgb(35, 119, 35);
+            }
+        }
+
+        .change-password .profile-backdrop {
+            visibility: visible;
+            opacity: 1;
+        }
+
+        .change-password .profile-modal {
+            visibility: visible;
+            opacity: 1;
+        }
+    }
+
+    @media screen and (min-width: 768px) {
+        .profile-container {
+            .profile-password-container {
+                .profile-modal {
+                    width: 20vw;
+                    height: 15vh;
+                }
+            }
+        }
+    }
+}

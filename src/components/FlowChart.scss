@@ -1,0 +1,134 @@
+@keyframes transitionIn {
+    from {
+        opacity: 0;
+        transform: rotateX(-10deg);
+    }
+
+    to {
+        opacity: 1;
+        transform: rotateX(0);
+    }
+}
+
+.flow-chart {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-end;
+    gap: 1rem;
+    padding: 1rem;
+    height: 70vh;
+    animation: transitionIn .75s;
+
+    .flow-chart--title {
+        background-color: rgb(234, 26, 26);
+        height: 2.5rem;
+        width: 40vw;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        border-radius: .5rem;
+        z-index: 1;
+        position: relative;
+    }
+
+    .flow-chart--body {
+        display: flex;
+        gap: 1rem;
+
+        .flow-chart--body-left {
+            display: flex;
+            flex-direction: column;
+            gap: 1rem;
+            position: relative;
+            z-index: 1;
+
+            .box-left {
+                background-color: rgb(105, 201, 222);
+                height: 2.5rem;
+                width: 40vw;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                border-radius: .5rem;
+            }
+
+            .box-left::after {
+                content: "";
+                display: block;
+                width: 25vw;
+                height: 2.5vh;
+                background-color: wheat;
+                position: absolute;
+                right: -3rem;
+                z-index: -1;
+            }
+        }
+
+        .flow-chart--body-right {
+            display: flex;
+            flex-direction: column;
+            gap: 1rem;
+            z-index: 1;
+
+            .box-right {
+                background-color: rgb(214, 26, 234);
+                height: 2.5rem;
+                width: 40vw;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                border-radius: .5rem;
+            }
+        }
+    }
+}
+
+@media screen and (min-width: 768px) {
+    .flow-chart {
+        flex-direction: row;
+        align-items: center;
+        justify-content: center;
+        height: 75vh;
+        gap: 10vw;
+        font-size: 1.8rem;
+
+        .flow-chart--title {
+            height: 5rem;
+            width: 20vw;
+        }
+
+        .flow-chart--body {
+            gap: 10rem;
+
+            .flow-chart--body-left {
+                gap: 10vh;
+
+                .box-left {
+                    height: 5rem;
+                    width: 20vw;
+                }
+
+                .box-left::after {
+                    content: "";
+                    display: block;
+                    width: 25vw;
+                    height: 5vh;
+                    background-color: wheat;
+                    position: absolute;
+                    right: -11rem;
+                    z-index: -1;
+                }
+            }
+    
+            .flow-chart--body-right {
+                gap: 10vh;
+
+                .box-right {
+                    height: 5rem;
+                    width: 20vw;
+                }
+            }
+        }
+    }
+}

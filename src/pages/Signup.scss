@@ -1,0 +1,98 @@
+.signup {
+    margin-top: -10vh;
+    position: relative;
+    z-index: 100;
+    background: black;
+    height: 100vh;
+    width: 100vw;
+    display: flex;
+    flex-direction: column;
+
+    .signup-container {
+        display: flex;
+        flex-direction: column;
+        width: 80vw;
+        height: 65vh;
+        align-items: center;
+        justify-content: center;
+        margin: auto;
+        background-color: wheat;
+        border-radius: 1rem;
+
+        .signup-buttons-container {
+            margin-bottom: 1rem;
+            display: flex;
+            gap: 2rem;
+
+            .signup-container-button {
+                background-color: white;
+                width: 5rem;
+                height: 2rem;
+                border: 1px solid black;
+                text-decoration: none;
+                color: black;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+            }
+
+            .signup-container-button:hover {
+                background-color: rgb(194, 84, 84);
+            }
+
+            .signup-button-on {
+                background-color: rgb(194, 84, 84);
+            }
+        }
+
+        input {
+            border: 1px solid black;
+            border-radius: .1rem;
+            height: 1.5rem;
+            width: 15rem;
+            padding: .1rem;
+        }
+
+        h3 {
+            color: black;
+            margin-bottom: .5rem;
+            font-size: 2rem;
+        }
+        
+        .signup-labels {
+            color: black;
+            margin-top: .1rem;
+        }
+
+        .signup-select {
+            width: 10rem;
+            height: 1.5rem;
+            border: 1px solid black;
+        }
+
+        .signup-image {
+            display: flex;
+            width: 5.7rem;
+            border: none;
+        }
+
+        button {
+            width: 8rem;
+            height: 3rem;
+            margin-top: 1rem;
+            font-size: 1.5rem;
+        }
+
+        .signup-error {
+            color: black;
+            margin-top: .5rem;
+        }
+    }
+
+    @media screen and (min-width: 768px) {
+        .signup-container {
+            width: 25rem;
+            height: 25rem;
+        }
+    }
+}

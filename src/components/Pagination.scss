@@ -1,0 +1,58 @@
+.myticket-buttons {
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    justify-content: space-between;
+    padding: 1rem;
+    padding-bottom: 2rem;
+
+    .myticket-button {
+        width: 5rem;
+        background-color: white;
+        color: black;
+        font-weight: bold;
+        font-size: 1rem;
+        cursor: pointer;
+    }
+
+    .myticket-button:hover {
+        background-color: wheat;
+    }
+
+    .pagination {
+        display: flex;
+        flex-direction: row;
+        list-style-type: none;
+        width: 5rem;
+        justify-content: center;
+    
+        .page-item, .page-item-on {
+            width: 1.5rem;
+            height: 1.5rem;
+            border: 1px solid lightgray;
+    
+            .page-link {
+                text-decoration: none;
+                color: white;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                height: 100%;
+                width: 100%;
+            }
+        }
+
+        .page-item-on {
+            background-color: wheat;
+
+            .page-link {
+                color: black;
+                font-weight: bold;
+            }
+        }
+    }
+
+    @media screen and (min-width: 768px) {
+        width: 30vw;
+    }
+}

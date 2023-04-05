@@ -1,0 +1,121 @@
+.login {
+    margin-top: -10vh;
+    position: relative;
+    z-index: 100;
+    background: black;
+    height: 100vh;
+    width: 100vw;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    .login-container {
+        display: flex;
+        flex-direction: column;
+        width: 80vw;
+        height: 40vh;
+        align-items: center;
+        justify-content: center;
+        margin-bottom: 3rem;
+        background-color: wheat;
+        border-radius: 1rem;
+
+        .login-buttons-container {
+            margin-bottom: 1rem;
+            display: flex;
+            gap: 2rem;
+
+            .login-container-button {
+                background-color: white;
+                width: 5rem;
+                height: 2rem;
+                border: 1px solid black;
+                text-decoration: none;
+                color: black;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+            }
+
+            .login-container-button:hover {
+                background-color: rgb(194, 84, 84);
+            }
+
+            .login-button-on {
+                background-color: rgb(194, 84, 84);
+            }
+        }
+
+        input {
+            border: 1px solid black;
+            border-radius: .1rem;
+            height: 1.5rem;
+            width: 15rem;
+            padding: .1rem;
+        }
+
+        .login-email-input {
+            margin-bottom: .5rem;
+        }
+
+        h3 {
+            color: black;
+            margin-bottom: .5rem;
+            font-size: 2rem;
+        }
+        
+        .login-labels {
+            color: black;
+            margin-top: .1rem;
+        }
+
+        button {
+            width: 8rem;
+            height: 3rem;
+            margin-top: 1rem;
+            font-size: 1.5rem;
+        }
+
+        .login-error {
+            color: black;
+            margin-top: .5rem;
+        }
+    }
+
+    .test-user {
+        height: 4rem;
+        width: 15rem;
+        background-color: wheat;
+        border-radius: .5rem;
+        color: black;
+        display: flex;
+        flex-direction: column;
+        font-weight: bold;
+        justify-content: center;
+        align-items: center;
+
+        .email {
+            display: flex;
+            width: 100%;
+            justify-content: space-between;
+            padding-left: .5rem;
+            padding-right: .5rem;
+        }
+
+        .password {
+            display: flex;
+            width: 100%;
+            justify-content: space-between;
+            padding-left: .5rem;
+            padding-right: .5rem;
+        }
+    }
+
+    @media screen and (min-width: 768px) {
+        .login-container {
+            width: 25rem;
+            height: 20rem;
+        }
+    }
+}

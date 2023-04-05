@@ -1,0 +1,323 @@
+.navbar {
+    background-color: rgb(26, 26, 49);
+    height: 10vh;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    color: white;
+    position: fixed;
+    width: 100vw;
+    z-index: 2;
+
+    .logout {
+        z-index: 6;
+        position: absolute;
+        margin: auto;
+        left: 0;
+        right: 15vw;
+        top: 40vh;
+        bottom: 0;
+        text-align: center;
+        width: 100vw;
+        height: 20vh;
+        background-color: transparent;
+        border-radius: .3rem;
+        visibility: hidden;
+        opacity: 0;
+    
+        .logout--container {
+            display: flex;
+            flex-direction: column;
+            height: 100%;
+            width: 100%;
+    
+            .logout-backdrop {
+                position: fixed;
+                top: 0;
+                left: 0;
+                width: 100vw;
+                height: 100vh;
+                background: rgba(0, 0, 0, 0.5);
+                backdrop-filter: blur(.1rem);
+                z-index: 4;
+                visibility: hidden;
+                opacity: 0;
+                transition: opacity .3s;
+            }
+    
+            .logout-modal {
+                position: fixed;
+                z-index: 5;
+                position: absolute;
+                visibility: hidden;
+                opacity: 0;
+                background-color: rgb(31, 31, 31);
+                width: 15rem;
+                height: 8rem;
+                position: absolute;
+                margin: auto;
+                left: 0;
+                right: 0;
+                top: 0;
+                bottom: 0;
+                display: flex;
+                flex-direction: column;
+                justify-content: space-between;
+                padding: .5rem 1rem 1rem 1rem;
+                border-radius: 10%;
+
+                .logout--head {
+                    display: flex;
+                    position: relative;
+                    align-items: flex-start;
+                    justify-content: center;
+                    padding-top: .2rem;
+        
+                    .title {
+                        cursor: default;
+                    }
+                }
+        
+                .logout--body {
+                    display: flex;
+                    justify-content: center;
+                    align-items: flex-end;
+                    padding: 0 .5rem .8rem .5rem;
+                    height: 100%;
+                    gap: 1rem;
+        
+                    button {
+                        height: 2rem;
+                        min-width: 6rem;
+                        text-decoration: none;
+                        background-color: white;
+                        display: flex;
+                        justify-content: center;
+                        align-items: center;
+                        border-radius: 1rem;
+                        border: none;
+                        cursor: pointer;
+                        font-size: 1.2rem;
+                    }
+        
+                    button:hover {
+                        background-color: wheat;
+                    }
+                }
+            }
+        }
+        
+        .logout-open .logout-backdrop {
+            visibility: visible;
+            opacity: 1;
+        }
+    
+        .logout-open .logout-modal {
+            visibility: visible;
+            opacity: 1;
+        }
+    
+        @media screen and (min-width: 768px) {
+            .logout--container {
+                .logout-modal {
+                    width: 15rem;
+                    height: 8rem;
+                }
+            }
+        }
+    }
+
+    .navbar-left {
+        display: flex;
+        align-items: center;
+        margin-left: 1rem;
+
+        .sidebar-button {
+            color: white;
+            display: flex;
+            cursor: pointer;
+
+            .menu {
+                font-size: 4rem;
+            }
+        }
+
+        .sidebar {
+            background-color: rgb(26, 26, 49);
+            min-height: 100vh;
+            z-index: 4;
+            position: absolute;
+            top: 0;
+            left: 0;
+            font-size: 2.5rem;
+            width: 15.4rem;
+            transform: translateX(-15.4rem);
+            transition: transform .3s;
+
+            .x {
+                font-size: 5rem;
+                margin-top: .5rem;
+                margin-left: .5rem;
+                margin-bottom: 0;
+                cursor: pointer;
+            }
+        
+            ul {
+
+                li {
+                    height: 2rem;
+                    display: flex;
+                    align-items: center;
+                    margin: 0 .5rem 2.5rem .5rem;
+            
+                    a, .sidebar-logout {
+                        color: rgb(181, 181, 181);
+                        text-decoration: none;
+                        height: 3.5rem;
+                        width: 100%;
+                        display: flex;
+                        justify-content: flex-start;
+                        align-items: center;
+                        padding: 0 .5rem;
+                        border-radius: 10%;
+                        cursor: pointer;
+            
+                        span {
+                            margin-right: .5rem;
+                        }
+                    }
+            
+                    a:hover, .sidebar-logout:hover {
+                        color: white;
+                        background-color: rgb(54, 54, 102);
+                    }
+                
+                    a.active, .sidebar-logout.active {
+                        color: white;
+                        background-color: rgb(54, 54, 102);
+                    }
+                }
+            }
+        }
+    }
+
+    .sidebar-overlay {
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100vw;
+        height: 100vh;
+        background: rgba(0, 0, 0, 0.5);
+        backdrop-filter: blur(.1rem);
+        z-index: 3;
+        visibility: hidden;
+        opacity: 0;
+        transition: opacity .3s;
+    }
+
+    .sidebar--open .sidebar-overlay {
+        visibility: visible;
+        opacity: 1;
+    }
+
+    .sidebar--open .sidebar {
+        transform: translateX(0);
+    }
+
+    .sidebar--logout .sidebar-overlay {
+        z-index: 5;
+    }
+
+    .navbar-middle {
+
+        .navbar-logo {
+            font-size: 2.5rem;
+            text-decoration: none;
+            color: white;
+            display: flex;
+            align-items: center;
+            visibility: hidden;
+            position: absolute;
+
+            .bug {
+                font-size: 2.5rem;
+                margin-right: .5rem;
+            }
+        }
+    }
+
+    .navbar-right {
+        display: flex;
+        align-items: center;
+
+        a {
+            display: flex;
+            align-items: center;
+            text-decoration: none;
+            width: 2.5rem;
+            color: white;
+            position: relative;
+            margin-right: 1.5rem;
+            cursor: pointer;
+        }
+
+        span {
+            margin-right: 1.5rem;
+            cursor: pointer;
+        }
+        
+        .navbar-image-container {
+            opacity: 0%;
+            pointer-events: none;
+            cursor: not-allowed;
+
+            .navbar-image {
+                width: 3rem;
+                height: 3rem;
+                border-radius: 50%;
+                object-fit: cover;
+                display: flex;
+            }
+        }
+    }
+
+    @media screen and (min-width: 768px) {
+        .navbar-middle {
+            .navbar-logo {
+                visibility: visible;
+                position: relative;
+            }
+        }
+
+        .navbar-right {
+            a {
+                .chat {
+                    visibility: visible;
+                    width: 2.5rem;
+                    height: 2.5rem;
+                }
+
+                .chat--notification {
+                    visibility: visible
+                }
+            }
+        }
+    }
+    
+    @media screen and (min-height: 650px) {
+        .navbar-left {
+            .sidebar {
+                ul {
+                    li {
+                        height: 2.5rem;
+                    }
+                }
+            }
+        }
+    }
+}
+
+.logout-open .logout {
+    visibility: visible;
+    opacity: 1;
+}

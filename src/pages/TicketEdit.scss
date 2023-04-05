@@ -1,0 +1,232 @@
+.TicketEdit {
+    height: 90vh;
+    width: 100vw;
+    top: -100vh;
+    position: absolute;
+    z-index: 2;
+    background-color: black;
+
+    .TicketEdit-container {
+        display: flex;
+        flex-direction: column;
+
+
+        .TicketEdit-buttons-container {
+            height: 10vh;
+            background-color: rgb(26, 26, 26);
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            gap: 3rem;
+
+            .TicketEdit-button {
+                height: 2rem;
+                width: 7rem;
+                font-weight: bold;
+                font-size: 1.1rem;
+                border-radius: 10%;
+                cursor: pointer;
+                background-color: rgb(47, 165, 47);
+                text-decoration: none;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                color: black; 
+                border: 1px solid black;
+            }
+
+            .TicketEdit-button:active {
+                background-color: rgb(35, 119, 35);
+            }
+        }
+
+        .TicketEdit-body-container {
+            height: 80vh;
+            width: 100vw;
+            
+            .TicketEdit-body {
+                width: 90vw;
+                height: 70vh;
+                margin: auto;
+                margin-top: 2rem;
+                padding: 1rem;
+                display: flex;
+                flex-direction: column;
+        
+                .TicketEdit-buttons-container {
+                    height: 10vh;
+                    background-color: rgb(26, 26, 26);
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                    gap: 3rem;
+        
+                    .TicketEdit-button {
+                        height: 2rem;
+                        width: 7rem;
+                        font-weight: bold;
+                        font-size: 1.1rem;
+                        border-radius: 10%;
+                        cursor: pointer;
+                        background-color: rgb(47, 165, 47);
+                        text-decoration: none;
+                        display: flex;
+                        justify-content: center;
+                        align-items: center;
+                        color: black; 
+                        border: 1px solid black;
+                    }
+        
+                    .TicketEdit-button:active {
+                        background-color: rgb(35, 119, 35);
+                    }
+                }
+
+                div {
+                    border-bottom: 1px solid rgb(110, 110, 110);
+                    flex: 1;
+                    align-items: center;
+                }
+
+                .TicketEdit-body-description {
+                    display: flex;
+                    flex-direction: column;
+                    gap: .5rem;
+                    flex: 3;
+                    align-items: flex-start;
+                    justify-content: center;
+                }
+
+                .TicketEdit-body-subcontainer {
+                    display: flex;
+                    justify-content: space-between;
+                    align-items: center;
+
+                    .TicketEdit-body-subcontainer-bottom {
+                        width: 7rem;
+                    }
+                }
+            }
+        }
+    }
+}
+
+.TicketEdit-on {
+    height: 90vh;
+    width: 100vw;
+    top: 0;
+    position: absolute;
+    z-index: 2;
+    background-color: black;
+
+    .TicketEdit-container {
+        display: flex;
+        flex-direction: column;
+
+
+        .TicketEdit-buttons-container {
+            height: 10vh;
+            background-color: rgb(26, 26, 26);
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            gap: 3rem;
+
+            .TicketEdit-button {
+                height: 2rem;
+                width: 7rem;
+                font-weight: bold;
+                font-size: 1.1rem;
+                border-radius: 10%;
+                cursor: pointer;
+                background-color: rgb(47, 165, 47);
+                text-decoration: none;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                color: black; 
+                border: 1px solid black;
+            }
+
+            .TicketEdit-button:active {
+                background-color: rgb(35, 119, 35);
+            }
+        }
+
+        .TicketEdit-body-container {
+            height: 80vh;
+            width: 100vw;
+            
+            .TicketEdit-body {
+                width: 90vw;
+                height: 70vh;
+                margin: auto;
+                margin-top: 2rem;
+                padding: 1rem;
+                display: flex;
+                flex-direction: column;
+
+                .TicketEdit-buttons-container {
+                    height: 10vh;
+                    background-color: black;
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                    gap: 3rem;
+                    border-bottom: none;
+                    margin-top: 1rem;
+        
+                    .TicketEdit-button {
+                        height: 2rem;
+                        width: 8rem;
+                        font-weight: bold;
+                        font-size: 1.1rem;
+                        border-radius: 10%;
+                        cursor: pointer;
+                        background-color: rgb(47, 165, 47);
+                        text-decoration: none;
+                        display: flex;
+                        justify-content: center;
+                        align-items: center;
+                        color: black; 
+                        border: 1px solid black;
+                    }
+        
+                    .TicketEdit-button:active {
+                        background-color: rgb(35, 119, 35);
+                    }
+                }
+
+                div {
+                    border-bottom: 1px solid rgb(110, 110, 110);
+                    flex: 1;
+                    align-items: center;
+                }
+
+                .TicketEdit-body-description {
+                    display: flex;
+                    flex-direction: column;
+                    gap: .5rem;
+                    flex: 3;
+                    align-items: flex-start;
+                    justify-content: center;
+                }
+
+                .TicketEdit-body-subcontainer {
+                    display: flex;
+                    justify-content: space-between;
+                    align-items: center;
+
+                    .TicketEdit-body-subcontainer-bottom {
+                        width: 7rem;
+                    }
+                    
+                    .editCheckbox {
+                        width: 1.5rem;
+                        height: 1.5rem;
+                    }
+                }
+            }
+        }
+    }
+}

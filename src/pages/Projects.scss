@@ -1,0 +1,177 @@
+.project {
+    button {
+        border-radius: 10%;
+    }
+
+    .project-top {
+        display: flex;
+        flex-direction: column;
+        width: 100vw;
+        height: 20vh;
+        background-color: rgb(26, 26, 26);
+        padding: 2rem;
+
+        .buttons-top {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            gap: 2rem;
+
+            .new-project-modal {
+                position: fixed;
+                z-index: 4;
+                position: absolute;
+                visibility: hidden;
+                opacity: 0;
+                background-color: rgb(31, 31, 31);
+                width: 80vw;
+                height: 30vh;
+                position: absolute;
+                margin: auto;
+                left: 0;
+                right: 0;
+                top: 0;
+                bottom: 0;
+                display: flex;
+                flex-direction: column;
+                justify-content: space-around;
+                padding: .5rem 1rem 1rem 1rem;
+
+                .new-project-title {
+                    display: flex;
+                    justify-content: center;
+                }
+
+                .new-project-inputs {
+                    width: 100%;
+                }
+
+                .new-project-button-container {
+                    display: flex;
+                    justify-content: flex-end;
+
+                    .new-project-button {
+                        height: 2rem;
+                        width: 4rem;
+                        background-color:rgb(47, 165, 47);
+                        cursor: pointer;
+                    }
+
+                    .new-project-button:active {
+                        background-color:rgb(35, 119, 35);
+                    }
+                }
+            }
+
+            .backdrop {
+                position: fixed;
+                top: 0;
+                left: 0;
+                width: 100vw;
+                height: 100vh;
+                background: rgba(0, 0, 0, 0.5);
+                backdrop-filter: blur(.1rem);
+                z-index: 3;
+                visibility: hidden;
+                opacity: 0;
+                transition: opacity .3s;
+            }
+    
+            .project-top-buttons {
+                height: 2rem;
+                width: 8rem;
+                font-size: .9rem;
+                font-weight: bold;
+                cursor: pointer;
+            }
+
+            .create-new {
+                background-color: rgb(47, 165, 47);
+            }
+
+            .create-new:active {
+                background-color: rgb(35, 119, 35);
+            }
+        }
+
+        .project-open .backdrop {
+            visibility: visible;
+            opacity: 1;
+        }
+
+        .project-open .new-project-modal {
+            visibility: visible;
+            opacity: 1;
+        }
+        
+        .buttons-bottom {
+            width: 100%;
+            padding-top: 1.5rem;
+            display: flex;
+            justify-content: space-between;
+
+            .bottom-buttons, .bottom-buttons-wheat {
+                height: 1.8rem;
+                width: 30vw;
+                font-weight: bold;
+                font-size: .9rem;
+                cursor: pointer;
+            }
+
+            .bottom-buttons-wheat {
+                background-color: wheat;
+            }
+
+            .bottom-buttons:hover {
+                background-color: wheat;
+            }
+        }
+    }
+
+    .project-body {
+        .project-body-head {
+            display: flex;
+            justify-content: space-around;
+            padding: 1rem;
+            height: 70vh;
+        }
+    }
+
+    @media screen and (min-width: 768px) {
+        .project-top {
+            flex-direction: row;
+            padding-left: 3rem;
+            height: 10vh;
+
+            .buttons-top {
+                justify-content: flex-start;
+
+                .new-project-modal {
+                    width: 40vw;
+
+                    .new-project-title {
+                        display: flex;
+                        justify-content: center;
+                    }
+                }
+            }
+
+            .buttons-bottom {
+                padding-top: 0;
+                display: flex;
+                justify-content: flex-end;
+                align-items: center;
+                gap: 1rem;
+
+                .bottom-buttons, .bottom-buttons-wheat {
+                    width: 6rem;
+                }
+            }
+        }
+
+        .project-body {
+            height: 80vh;
+            padding: 1rem 0 0 2rem;
+        }
+    }
+}

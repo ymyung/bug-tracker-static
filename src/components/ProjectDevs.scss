@@ -1,0 +1,271 @@
+@keyframes transitionIn {
+    from {
+        opacity: 0;
+        transform: rotateX(-10deg);
+    }
+
+    to {
+        opacity: 1;
+        transform: rotateX(0);
+    }
+}
+
+.project-devs {
+    display: flex;
+    flex-direction: column;
+    height: 70vh;
+    justify-content: space-between;
+    padding: 1rem;
+    padding-top: 0;
+    animation: transitionIn .75s;
+
+    .devs-number-container {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding-top: .5rem;
+
+        .add-dev-container {
+            width: 25vw;
+            margin-left: .5rem;
+
+            .add-dev-backdrop, .remove-dev-backdrop {
+                position: fixed;
+                top: 0;
+                left: 0;
+                width: 100vw;
+                height: 100vh;
+                background: rgba(0, 0, 0, 0.5);
+                backdrop-filter: blur(.1rem);
+                z-index: 3;
+                visibility: hidden;
+                opacity: 0;
+                transition: opacity .3s;
+            }
+
+            .add-dev-modal, .remove-dev-modal {
+                position: fixed;
+                z-index: 4;
+                position: absolute;
+                visibility: hidden;
+                opacity: 0;
+                background-color: rgb(31, 31, 31);
+                width: 80vw;
+                height: 60vh;
+                position: absolute;
+                margin: auto;
+                left: 0;
+                right: 0;
+                top: 0;
+                bottom: 0;
+                display: flex;
+                flex-direction: column;
+                justify-content: space-between;
+                padding: 1rem;
+
+                .modal-top {
+                    width: 100%;
+                    display: flex;
+                    justify-content: space-between;
+
+                    .modal-devs {
+                        width: 50%;
+                    }
+                }
+
+                .modal-middle {
+                    display: flex;
+                    justify-content: space-between;
+                    align-items: center;
+                    width: 100%;
+
+                    .modal-selected-user {
+                        font-size: 1.5rem;
+                        color: wheat;
+                    }
+                }
+
+                .button-container {
+                    width: 100%;
+                    display: flex;
+                    justify-content: flex-end;
+
+                    .add-dev-submit {
+                        width: 6.5rem;
+                        height: 2rem;
+                        background-color: rgb(47, 165, 47);
+                        font-weight: bold;
+                        cursor: pointer;
+                    }
+
+                    .remove-dev-submit {
+                        width: 6.5rem;
+                        height: 2rem;
+                        background-color: rgb(243, 52, 52);
+                        font-weight: bold;
+                        cursor: pointer;
+                    }
+                }
+            }
+
+            .add-dev-left {
+                width: 6.5rem;
+                max-width: 35%;
+                height: 2rem;
+                background-color: rgb(47, 165, 47);
+                font-weight: bold;
+                cursor: pointer;
+            }
+
+            .add-dev-right {
+                width: 6.5rem;
+                max-width: 65%;
+                height: 2rem;
+                background-color: rgb(243, 52, 52);
+                font-weight: bold;
+                cursor: pointer;
+            }
+
+            .add-dev:active {
+                background-color: rgb(35, 119, 35);
+            }
+        }
+
+        .add-dev-open .add-dev-backdrop {
+            visibility: visible;
+            opacity: 1;
+        }
+
+        .add-dev-open .add-dev-modal {
+            visibility: visible;
+            opacity: 1;
+        }
+
+        .remove-dev-open .remove-dev-backdrop {
+            visibility: visible;
+            opacity: 1;
+        }
+
+        .remove-dev-open .remove-dev-modal {
+            visibility: visible;
+            opacity: 1;
+        }
+
+        .devs-number-right {
+            width: 25vw;
+            margin-right: .5rem;
+            display: flex;
+            align-items: center;
+            justify-content: flex-end;
+
+            .devs-search {
+                width: 5.5rem;
+                height: 1.5rem;
+            }
+        }
+
+        .devs-number-middle {
+            width: 20vw;
+            display: flex;
+            justify-content: center;
+
+            .devs-number {
+                display: flex;
+                align-items: center;
+                font-size: 1rem;
+                text-align: center;
+            }
+        }
+    }
+
+    .devs-left {
+        color: gray;
+        margin-right: 1rem;
+    }
+
+    .devs-container {
+        flex: 8;
+        padding: .5rem;
+        
+        .dev-container {
+            display: flex;
+            flex-direction: column;
+            border: 1px solid gray;
+            height: 12.5%;
+            justify-content: space-around;
+            text-decoration: none;
+            color: white;
+
+            .dev-container-top {
+                display: flex;
+                flex-direction: row;
+                width: 100%;
+                margin-left: .5rem;
+                margin-right: .5rem;
+
+                .devs-name {
+                    flex: 1;
+                    display: flex;
+                }
+    
+                .devs-role {
+                    flex: 1;
+                    display: flex;
+                }
+            }
+
+            .dev-container-bottom {
+                display: flex;
+                margin-left: .5rem;
+                margin-right: .5rem;
+
+                .devs-email {
+                    flex: 1;
+                    display: flex;
+                    align-items: center;
+                }
+            }
+        }
+
+        .dev-container:hover {
+            background-color: rgb(46, 46, 46);
+        }
+    }
+
+    .devs-buttons {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    @media screen and (min-width: 768px) {
+        height: 80vh;
+        padding-right: 2rem;
+
+        .devs-number-container {
+            padding-top: 0;
+
+            .add-dev-container {
+                .add-dev-modal {
+                    width: 40vw;
+                    height: 50vh;
+                }
+            }
+
+            .devs-number-right {
+                .devs-search {
+                    width: 8rem;
+                }
+            }
+
+            .devs-number-middle {
+                width: 50vw;
+
+                .devs-number {
+                    font-size: 2rem;
+                    margin-right: 0;
+                }
+            }
+        }
+    }
+}

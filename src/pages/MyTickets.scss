@@ -1,0 +1,232 @@
+@keyframes transitionIn {
+    from {
+        opacity: 0;
+        transform: rotateX(-10deg);
+    }
+
+    to {
+        opacity: 1;
+        transform: rotateX(0);
+    }
+}
+
+.myticket-tickets {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    height: 90vh;
+    padding: 1rem;
+    padding-top: 0;
+    animation: transitionIn .75s;
+
+    .myticket-title-container {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding-top: .5rem;
+
+        .myticket-title-right {
+            width: 25vw;
+            margin-right: .5rem;
+            display: flex;
+            align-items: center;
+            justify-content: flex-end;
+
+            .myticket-search {
+                width: 5.5rem;
+                height: 1.5rem;
+            }
+        }
+
+        .myticket-number-container {
+            width: 30vw;
+            display: flex;
+            justify-content: center;
+            text-align: center;
+
+            .myticket-number {
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                font-size: 1rem;
+            }
+        }
+
+        .new-myticket-container {
+            width: 25vw;
+            display: flex;
+            justify-content: flex-start;
+            margin-left: .5rem;
+            
+            .new-myticket-backdrop {
+                position: fixed;
+                top: 0;
+                left: 0;
+                width: 100vw;
+                height: 100vh;
+                background: rgba(0, 0, 0, 0.5);
+                backdrop-filter: blur(.1rem);
+                z-index: 3;
+                visibility: hidden;
+                opacity: 0;
+                transition: opacity .3s;
+            }
+
+            .new-myticket-modal {
+                position: fixed;
+                z-index: 4;
+                position: absolute;
+                visibility: hidden;
+                opacity: 0;
+                background-color: rgb(31, 31, 31);
+                width: 80vw;
+                height: 60vh;
+                position: absolute;
+                margin: auto;
+                left: 0;
+                right: 0;
+                top: 0;
+                bottom: 0;
+                display: flex;
+                flex-direction: column;
+                justify-content: space-between;
+                padding: .5rem 1rem 1rem 1rem;
+
+                .new-myticket-input {
+                    width: 100%;
+                }
+
+                .new-myticket-date {
+                    display: flex;
+                    justify-content: space-between;
+                    align-items: flex-end;
+
+                    .new-myticket-save {
+                        width: 6rem;
+                        height: 2rem;
+                    }
+                }
+            }
+
+            .new-myticket {
+                width: 6.5rem;
+                height: 2rem;
+                background-color: rgb(47, 165, 47);
+                font-weight: bold;
+                cursor: pointer;
+                border-radius: 10%;
+            }
+
+            .new-myticket:active {
+                background-color: rgb(35, 119, 35);
+            }
+        }
+
+        .new-myticket-open .new-myticket-backdrop {
+            visibility: visible;
+            opacity: 1;
+        }
+
+        .new-myticket-open .new-myticket-modal {
+            visibility: visible;
+            opacity: 1;
+        }
+    }
+
+    .myticket-left {
+        color: gray;
+        margin-right: 1rem;
+        font-size: .8rem;
+    }
+
+    .myticket-containers {
+        flex: 8;
+        padding: .5rem;
+        height: 70vh;
+        
+        .myticket-container {
+            display: flex;
+            flex-direction: column;
+            border: 1px solid gray;
+            height: 12.5%;
+            justify-content: space-around;
+            text-decoration: none;
+            color: white;
+            cursor: pointer;
+
+            .myticket-container-top {
+                display: flex;
+                flex-direction: row;
+                width: 100%;
+                margin-left: .5rem;
+                margin-right: .5rem;
+
+                .myticket-name {
+                    flex: 1;
+                    display: flex;
+                }
+    
+                .myticket-role {
+                    flex: 1;
+                    display: flex;
+                }
+            }
+
+            .myticket-container-bottom {
+                display: flex;
+                margin-left: .5rem;
+                margin-right: .5rem;
+
+                .myticket-email {
+                    flex: 1;
+                    display: flex;
+                    align-items: center;
+                }
+
+                .myticket-priority {
+                    flex: 1;
+                    display: flex;
+                }
+            }
+        }
+
+        .myticket-container:hover {
+            background-color: rgb(46, 46, 46);
+        }
+    }
+
+    .pagination-container {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    @media screen and (min-width: 768px) {
+        padding: 1rem 2rem 0 3rem;
+
+        .myticket-title-container {
+            padding-top: 0;
+
+            .myticket-title-right {
+                .myticket-search {
+                    width: 8rem;
+                }
+            }
+
+            .new-myticket-container {
+                .new-myticket-modal {
+                    width: 40vw;
+                    height: 50vh;
+                }
+            }
+            
+            .myticket-number-container {
+                .myticket-number {
+                    align-items: flex-start;
+                    font-size: 2rem;
+                    margin-right: 0;
+                }
+            }
+        }
+    }
+}
