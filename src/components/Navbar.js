@@ -18,10 +18,6 @@ const Navbar = () => {
         setNavbarLeft("navbar-left")
     }
 
-    // const openLogout = () => {
-    //     setNavbarLeft("navbar-left sidebar--open sidebar--logout")
-    // }
-
     const LogoutOpen = () => {
         setLogoutContainer('logout--container logout-open')
         setNavbar('navbar logout-open')

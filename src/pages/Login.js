@@ -12,7 +12,9 @@ const Login = () => {
     const handleSubmit = async (e) => {
         e.preventDefault()
 
-        await login(email, password)
+        if (email === 'testuser@gmail.com' && password === 'dA08T8Fwit0^') {
+            await login(email, password)
+        }
     }
 
     return (

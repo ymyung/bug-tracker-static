@@ -2,7 +2,7 @@ import { useState, useEffect } from 'react'
 import { useAuthContext } from './useAuthContext'
 
 export const useLogin = () => {
-    const [error, setError] = useState(null)
+    const [error] = useState(null)
     const [isLoading, setIsLoading] = useState(null)
     const { dispatch } = useAuthContext()
 
@@ -21,31 +21,30 @@ export const useLogin = () => {
     }, [])
 
     const login = async (email, password) => {
-        setIsLoading(true)
-        setError(null)
+        // setIsLoading(true)
+        // setError(null)
 
-        const response = await fetch('https://bug-tracker-backend-ne3r.onrender.com/user/login', {
-            method: 'POST',
-            headers: {'Content-Type': 'application/json'},
-            body: JSON.stringify({email, password})
-        })
-        const json = await response.json()
+        // const response = await fetch('https://localhost:4000/user/login', {
+        //     method: 'POST',
+        //     headers: {'Content-Type': 'application/json'},
+        //     body: JSON.stringify({email, password})
+        // })
+        // const json = await response.json()
+        const json = "a"
 
-        if (!response.ok) {
-            setIsLoading(false)
-            setError(json.error)
-        }
-        if (response.ok) {
-            // save user to local storage
-            const expirationTime = new Date().getTime() + 3 * 24 * 60 * 60 * 1000; // 3 days in milliseconds
-            localStorage.setItem('user', JSON.stringify(json))
-            localStorage.setItem('expirationTime', expirationTime);
+        // if (!response.ok) {
+        //     setIsLoading(false)
+        //     setError(json.error)
+        // }
+        // save user to local storage
+        const expirationTime = new Date().getTime() + 3 * 24 * 60 * 60 * 1000; // 3 days in milliseconds
+        localStorage.setItem('user', JSON.stringify(json))
+        localStorage.setItem('expirationTime', expirationTime);
 
-            // update auth context
-            dispatch({type: 'LOGIN', payload: json})
+        // update auth context
+        dispatch({type: 'LOGIN', payload: json})
 
-            setIsLoading(false)
-        }
+        setIsLoading(false)
     }
 
     return { login, isLoading, error }

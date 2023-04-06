@@ -21,11 +21,192 @@ const MyTickets = () => {
         const fetchTickets = async () => {
             try {
                 setLoading(true)
-                const userInfo = await fetch(`https://bug-tracker-backend-ne3r.onrender.com/user/email/${user.email}`, {
-                    headers: {'Authorization': `Bearer ${user.token}`}
-                })
+                // const userInfo = await fetch(`https://localhost:4000/user/email/${user.email}`, {
+                //     headers: {'Authorization': `Bearer ${user.token}`}
+                // })
 
-                const data = await userInfo.json();
+                // const data = await userInfo.json();
+                const data = {
+                    "_id": "64066ee557c03d1ecffc51ed",
+                    "username": "testuser",
+                    "email": "testuser@gmail.com",
+                    "role": "dev",
+                    "image": null,
+                    "createdAt": "2023-03-06T22:53:25.507Z",
+                    "updatedAt": "2023-03-15T11:14:39.294Z",
+                    "__v": 0,
+                    "tickets": [
+                        {
+                            "_id": "6403b096c70703cc30910d2c",
+                            "title": "Ticket 1",
+                            "description": "Ticket 1 description",
+                            "createdBy": "64066ee557c03d1ecffc51ed",
+                            "dev": "64066ee557c03d1ecffc51ed",
+                            "dateCreated": "2022-11-27T07:00:00.000Z",
+                            "dueDate": "2023-03-02T07:00:00.000Z",
+                            "type": "Backend",
+                            "status": "open",
+                            "dateResolved": "2022-11-01T00:00:00.000Z",
+                            "priority": "low"
+                        },
+                        {
+                            "_id": "6403b0a4c70703cc30910d2f",
+                            "title": "Ticket 2",
+                            "description": "Ticket 2 description",
+                            "createdBy": "64066ee557c03d1ecffc51ed",
+                            "dev": "64066ee557c03d1ecffc51ed",
+                            "dateCreated": "2022-11-27T07:00:00.000Z",
+                            "dueDate": "2023-03-02T07:00:00.000Z",
+                            "type": "Backend",
+                            "status": "open",
+                            "dateResolved": "2022-11-01T00:00:00.000Z",
+                            "priority": "low"
+                        },
+                        {
+                            "_id": "6403b25dc70703cc30910d5a",
+                            "title": "Ticket 3",
+                            "description": "Ticket description",
+                            "createdBy": "64066ee557c03d1ecffc51ed",
+                            "dev": "64066ee557c03d1ecffc51ed",
+                            "dateCreated": "2022-11-27T07:00:00.000Z",
+                            "dueDate": "2023-03-02T07:00:00.000Z",
+                            "type": "Backend",
+                            "status": "open",
+                            "dateResolved": "2022-12-01T00:00:00.000Z",
+                            "priority": "low"
+                        },
+                        {
+                            "_id": "6403b266c70703cc30910d5d",
+                            "title": "Ticket 4",
+                            "description": "Ticket description",
+                            "createdBy": "64066ee557c03d1ecffc51ed",
+                            "dev": "64066ee557c03d1ecffc51ed",
+                            "dateCreated": "2022-11-27T07:00:00.000Z",
+                            "dueDate": "2023-03-02T07:00:00.000Z",
+                            "type": "Backend",
+                            "status": "open",
+                            "dateResolved": "2022-12-01T00:00:00.000Z",
+                            "priority": "low"
+                        },
+                        {
+                            "_id": "6403b269c70703cc30910d60",
+                            "title": "Ticket 5",
+                            "description": "Ticket description",
+                            "createdBy": "64066ee557c03d1ecffc51ed",
+                            "dev": "64066ee557c03d1ecffc51ed",
+                            "dateCreated": "2022-11-27T07:00:00.000Z",
+                            "dueDate": "2023-03-02T07:00:00.000Z",
+                            "type": "Backend",
+                            "status": "open",
+                            "dateResolved": "2022-12-01T00:00:00.000Z",
+                            "priority": "low"
+                        },
+                        {
+                            "_id": "6403b26cc70703cc30910d63",
+                            "title": "Ticket 6",
+                            "description": "Ticket description",
+                            "createdBy": "64066ee557c03d1ecffc51ed",
+                            "dev": "64066ee557c03d1ecffc51ed",
+                            "dateCreated": "2022-12-27T07:00:00.000Z",
+                            "dueDate": "2023-03-02T07:00:00.000Z",
+                            "type": "Backend",
+                            "status": "open",
+                            "dateResolved": "2022-12-01T00:00:00.000Z",
+                            "priority": "low"
+                        },
+                        {
+                            "_id": "6403b270c70703cc30910d66",
+                            "title": "Ticket 7",
+                            "description": "Ticket description",
+                            "createdBy": "64066ee557c03d1ecffc51ed",
+                            "dev": "64066ee557c03d1ecffc51ed",
+                            "dateCreated": "2022-12-27T07:00:00.000Z",
+                            "dueDate": "2023-03-02T07:00:00.000Z",
+                            "type": "Backend",
+                            "status": "open",
+                            "dateResolved": "2022-12-01T00:00:00.000Z",
+                            "priority": "low"
+                        },
+                        {
+                            "_id": "6403b27dc70703cc30910d69",
+                            "title": "Ticket 8",
+                            "description": "Ticket description",
+                            "createdBy": "64066ee557c03d1ecffc51ed",
+                            "dev": "64066ee557c03d1ecffc51ed",
+                            "dateCreated": "2022-12-27T07:00:00.000Z",
+                            "dueDate": "2023-03-02T07:00:00.000Z",
+                            "type": "Backend",
+                            "status": "open",
+                            "dateResolved": "2023-01-01T00:00:00.000Z",
+                            "priority": "medium"
+                        },
+                        {
+                            "_id": "6403b280c70703cc30910d6c",
+                            "title": "Ticket 9",
+                            "description": "Ticket description",
+                            "createdBy": "64066ee557c03d1ecffc51ed",
+                            "dev": "64066ee557c03d1ecffc51ed",
+                            "dateCreated": "2022-12-27T07:00:00.000Z",
+                            "dueDate": "2023-03-02T07:00:00.000Z",
+                            "type": "Backend",
+                            "status": "open",
+                            "dateResolved": "2023-01-01T00:00:00.000Z",
+                            "priority": "medium"
+                        },
+                        {
+                            "_id": "6403b284c70703cc30910d6f",
+                            "title": "Ticket 10",
+                            "description": "Ticket description",
+                            "createdBy": "64066ee557c03d1ecffc51ed",
+                            "dev": "64066ee557c03d1ecffc51ed",
+                            "dateCreated": "2022-12-27T07:00:00.000Z",
+                            "dueDate": "2023-03-02T07:00:00.000Z",
+                            "type": "Backend",
+                            "status": "open",
+                            "dateResolved": "2023-01-01T00:00:00.000Z",
+                            "priority": "medium"
+                        },
+                        {
+                            "_id": "6403b28dc70703cc30910d72",
+                            "title": "Ticket 11",
+                            "description": "Ticket description",
+                            "createdBy": "64066ee557c03d1ecffc51ed",
+                            "dev": "64066ee557c03d1ecffc51ed",
+                            "dateCreated": "2022-12-27T07:00:00.000Z",
+                            "dueDate": "2023-03-02T07:00:00.000Z",
+                            "type": "Backend",
+                            "status": "open",
+                            "dateResolved": "2023-02-01T00:00:00.000Z",
+                            "priority": "medium"
+                        },
+                        {
+                            "_id": "6403b294c70703cc30910d75",
+                            "title": "Ticket 12",
+                            "description": "Ticket description",
+                            "createdBy": "64066ee557c03d1ecffc51ed",
+                            "dev": "64066ee557c03d1ecffc51ed",
+                            "dateCreated": "2023-01-27T07:00:00.000Z",
+                            "dueDate": "2023-03-02T07:00:00.000Z",
+                            "type": "Backend",
+                            "status": "open",
+                            "dateResolved": "2023-03-01T00:00:00.000Z",
+                            "priority": "medium"
+                        },
+                        {
+                            "_id": "64119f0ac9845653a1ead9dd",
+                            "title": "test",
+                            "description": "test",
+                            "createdBy": "64066ee557c03d1ecffc51ed",
+                            "dev": "64066ee557c03d1ecffc51ed",
+                            "dateCreated": "2023-03-15T10:33:38.044Z",
+                            "dueDate": "2023-03-24T00:00:00.000Z",
+                            "type": "bug",
+                            "priority": "low",
+                            "status": "open",
+                            "dateResolved": null
+                        }
+                    ]
+                }
 
                 const openTickets = data.tickets.filter(ticket => ticket.status === 'open')
 

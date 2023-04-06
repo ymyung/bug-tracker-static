@@ -34,11 +34,11 @@ const TicketEdit = ({ ticketEdit, closeTicketEdit, currentTicket }) => {
                 requestBody.type = editType;
                 requestBody.resolved = editResolved;
 
-                await fetch(`https://bug-tracker-backend-ne3r.onrender.com/ticket/${currentTicket._id}`, {
-                    method: 'PATCH',
-                    headers: {'Authorization': `Bearer ${user.token}`, 'Content-Type': 'application/json'},
-                    body: JSON.stringify(requestBody)
-                })
+                // await fetch(`https://localhost:4000/ticket/${currentTicket._id}`, {
+                //     method: 'PATCH',
+                //     headers: {'Authorization': `Bearer ${user.token}`, 'Content-Type': 'application/json'},
+                //     body: JSON.stringify(requestBody)
+                // })
             } catch (error) {
                 throw error
             }
