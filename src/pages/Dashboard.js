@@ -76,7 +76,7 @@ const Dashboard = () => {
                         'rgba(255, 124, 74, 1)'
                     ],
                     borderColor: [
-                        'rgba(105, 201, 222, 0.8)'
+                        'black'
                     ]
                 }
             ]})
@@ -98,7 +98,7 @@ const Dashboard = () => {
                         'rgba(255, 124, 74, 1)'
                     ],
                     borderColor: [
-                        'rgba(105, 201, 222, 0.8)'
+                        'rgb(0, 102, 204)'
                     ]
                 }
             ]})
@@ -128,7 +128,7 @@ const Dashboard = () => {
                         'rgba(255, 124, 74, 1)'
                     ],
                     borderColor: [
-                        'rgba(105, 201, 222, 0.8)'
+                        'black'
                     ]
                 }
             ]})

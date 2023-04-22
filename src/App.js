@@ -24,21 +24,22 @@ function App() {
 
     return (
         <Router>
-            {user && <Navbar />}
-            <div className="body">
-                <Routes>
-                    <Route path="/" element={user ? <Dashboard /> : <Navigate to="/login" />} />
-                    <Route path="/projects" element={user ? <Projects /> : <Navigate to="/login" />} />
-                    <Route path="/users-all" element={user ? <UsersAll /> : <Navigate to="/login" />} />
-                    <Route path="/my-tickets" element={user ? <MyTicket /> : <Navigate to="/login" />} />
-                    <Route path="/ticket-edit" element={user ? <TicketEdit /> : <Navigate to="/login" />} />
-                    <Route path="/ticket-history" element={user ? <TicketHistory /> : <Navigate to="/login" />} />
-                    <Route path="/profile" element={user ? <Profile /> : <Navigate to="/login" />} />
-                    <Route path="/login" element={!user ? <Login /> : <Navigate to="/" />} />
-                    <Route path="/signup" element={!user ? <Signup /> : <Navigate to="/" />} /> 
-                    <Route path="*" element={<Error />} />
-                </Routes>
-            </div>
+          <div className="preloader"></div>
+          {user && <Navbar />}
+          <div className="body">
+              <Routes>
+                  <Route path="/" element={user ? <Dashboard /> : <Navigate to="/login" />} />
+                  <Route path="/projects" element={user ? <Projects /> : <Navigate to="/login" />} />
+                  <Route path="/users-all" element={user ? <UsersAll /> : <Navigate to="/login" />} />
+                  <Route path="/my-tickets" element={user ? <MyTicket /> : <Navigate to="/login" />} />
+                  <Route path="/ticket-edit" element={user ? <TicketEdit /> : <Navigate to="/login" />} />
+                  <Route path="/ticket-history" element={user ? <TicketHistory /> : <Navigate to="/login" />} />
+                  <Route path="/profile" element={user ? <Profile /> : <Navigate to="/login" />} />
+                  <Route path="/login" element={!user ? <Login /> : <Navigate to="/" />} />
+                  <Route path="/signup" element={!user ? <Signup /> : <Navigate to="/" />} /> 
+                  <Route path="*" element={<Error />} />
+              </Routes>
+          </div>
         </Router>
     );
 }

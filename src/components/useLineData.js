@@ -193,8 +193,8 @@ const useLineData = () => {
                         "dateCreated": "2022-12-27T07:00:00.000Z",
                         "dueDate": "2023-03-02T07:00:00.000Z",
                         "type": "Backend",
-                        "status": "open",
-                        "dateResolved": "2022-12-01T00:00:00.000Z",
+                        "status": "resolved",
+                        "dateResolved": "2023-01-01T00:00:00.000Z",
                         "__v": 0,
                         "priority": "low"
                     },
@@ -219,7 +219,7 @@ const useLineData = () => {
                         "dateCreated": "2022-12-27T07:00:00.000Z",
                         "dueDate": "2023-03-02T07:00:00.000Z",
                         "type": "Backend",
-                        "status": "open",
+                        "status": "resolved",
                         "dateResolved": "2023-01-01T00:00:00.000Z",
                         "__v": 0,
                         "priority": "medium"
@@ -245,7 +245,7 @@ const useLineData = () => {
                         "dateCreated": "2022-12-27T07:00:00.000Z",
                         "dueDate": "2023-03-02T07:00:00.000Z",
                         "type": "Backend",
-                        "status": "open",
+                        "status": "resolved",
                         "dateResolved": "2023-01-01T00:00:00.000Z",
                         "__v": 0,
                         "priority": "medium"
@@ -271,8 +271,8 @@ const useLineData = () => {
                         "dateCreated": "2022-12-27T07:00:00.000Z",
                         "dueDate": "2023-03-02T07:00:00.000Z",
                         "type": "Backend",
-                        "status": "open",
-                        "dateResolved": "2023-01-01T00:00:00.000Z",
+                        "status": "resolved",
+                        "dateResolved": "2023-02-01T00:00:00.000Z",
                         "__v": 0,
                         "priority": "medium"
                     },
@@ -297,7 +297,7 @@ const useLineData = () => {
                         "dateCreated": "2022-12-27T07:00:00.000Z",
                         "dueDate": "2023-03-02T07:00:00.000Z",
                         "type": "Backend",
-                        "status": "open",
+                        "status": "resolved",
                         "dateResolved": "2023-02-01T00:00:00.000Z",
                         "__v": 0,
                         "priority": "medium"
@@ -323,8 +323,8 @@ const useLineData = () => {
                         "dateCreated": "2023-01-27T07:00:00.000Z",
                         "dueDate": "2023-03-02T07:00:00.000Z",
                         "type": "Backend",
-                        "status": "open",
-                        "dateResolved": "2023-03-01T00:00:00.000Z",
+                        "status": "resolved",
+                        "dateResolved": "2023-04-01T00:00:00.000Z",
                         "__v": 0,
                         "priority": "medium"
                     },
@@ -448,7 +448,7 @@ const useLineData = () => {
                         "dateCreated": "2023-02-27T07:00:00.000Z",
                         "dueDate": "2023-03-02T07:00:00.000Z",
                         "type": "Backend",
-                        "status": "resolved",
+                        "status": "open",
                         "dateResolved": "2023-03-01T00:00:00.000Z",
                         "__v": 0,
                         "priority": "critical"
@@ -500,7 +500,7 @@ const useLineData = () => {
                         "type": "ui",
                         "priority": "high",
                         "status": "open",
-                        "dateResolved": "2023-03-01T00:00:00.000Z",
+                        "dateResolved": "2023-04-01T00:00:00.000Z",
                         "__v": 0
                     },
                     {
@@ -525,7 +525,7 @@ const useLineData = () => {
                         "type": "ui",
                         "priority": "high",
                         "status": "open",
-                        "dateResolved": "2023-03-01T00:00:00.000Z",
+                        "dateResolved": "2023-04-01T00:00:00.000Z",
                         "__v": 0
                     },
                     {
@@ -549,8 +549,8 @@ const useLineData = () => {
                         "dueDate": "2023-03-02T07:00:00.000Z",
                         "type": "performance",
                         "priority": "medium",
-                        "status": "open",
-                        "dateResolved": "2023-03-01T00:00:00.000Z",
+                        "status": "resolved",
+                        "dateResolved": "2023-05-01T00:00:00.000Z",
                         "__v": 0
                     },
                     {
@@ -574,8 +574,8 @@ const useLineData = () => {
                         "dueDate": "2023-03-02T07:00:00.000Z",
                         "type": "performance",
                         "priority": "medium",
-                        "status": "open",
-                        "dateResolved": "2023-03-01T00:00:00.000Z",
+                        "status": "resolved",
+                        "dateResolved": "2023-05-01T00:00:00.000Z",
                         "__v": 0
                     },
                     {
@@ -624,8 +624,8 @@ const useLineData = () => {
                         "dueDate": "2023-03-02T07:00:00.000Z",
                         "type": "performance",
                         "priority": "medium",
-                        "status": "open",
-                        "dateResolved": "2023-03-01T00:00:00.000Z",
+                        "status": "resolved",
+                        "dateResolved": "2023-05-01T00:00:00.000Z",
                         "__v": 0
                     },
                     {

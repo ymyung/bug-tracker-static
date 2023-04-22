@@ -21,7 +21,7 @@
     animation: transitionIn .75s;
 
     .flow-chart--title {
-        background-color: rgb(234, 26, 26);
+        background-color: rgb(44, 44, 83);
         height: 2.5rem;
         width: 40vw;
         display: flex;
@@ -44,7 +44,6 @@
             z-index: 1;
 
             .box-left {
-                background-color: rgb(105, 201, 222);
                 height: 2.5rem;
                 width: 40vw;
                 display: flex;
@@ -53,12 +52,24 @@
                 border-radius: .5rem;
             }
 
+            .box-left-top {
+              background-color: rgb(255, 87, 51);
+            }
+
+            .box-left-middle {
+              background-color: rgb(199, 0, 57);
+            }
+
+            .box-left-bottom {
+              background-color: rgb(144, 12, 63);
+            }
+
             .box-left::after {
                 content: "";
                 display: block;
                 width: 25vw;
                 height: 2.5vh;
-                background-color: wheat;
+                background-color: rgb(88, 24, 69);
                 position: absolute;
                 right: -3rem;
                 z-index: -1;
@@ -72,13 +83,24 @@
             z-index: 1;
 
             .box-right {
-                background-color: rgb(214, 26, 234);
                 height: 2.5rem;
                 width: 40vw;
                 display: flex;
                 justify-content: center;
                 align-items: center;
                 border-radius: .5rem;
+            }
+
+            .box-right-top {
+              background-color: rgb(255, 87, 51);
+            }
+
+            .box-right-middle {
+              background-color: rgb(199, 0, 57);
+            }
+
+            .box-right-bottom {
+              background-color: rgb(144, 12, 63);
             }
         }
     }
@@ -109,12 +131,16 @@
                     width: 20vw;
                 }
 
+                .bot-left-top {
+                  background-color: rgb(255, 195, 0);
+                }
+
                 .box-left::after {
                     content: "";
                     display: block;
                     width: 25vw;
                     height: 5vh;
-                    background-color: wheat;
+                    background-color: rgb(44, 44, 83);
                     position: absolute;
                     right: -11rem;
                     z-index: -1;

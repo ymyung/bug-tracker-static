@@ -111,43 +111,97 @@ const Projects = () => {
                     {
                         "_id": "640a6bb0712c1e0dca68da61",
                         "title": "Bug Tracker",
-                        "description": "A dashboard to track data",
+                        "description": "A responsive and user-friendly tool for tracking bugs and problems within your project. Significantly Improves project code quality and development speed",
                         "devs": [
                             {
                                 "_id": "64066ee557c03d1ecffc51ed",
-                                "username": "testuser",
-                                "email": "testuser@gmail.com",
-                                "role": "dev",
+                                "username": "Melissa Thompson",
+                                "email": "melissathompson@gmail.com",
+                                "role": "senior dev",
                                 "image": null
                             },
                             {
                                 "_id": "6407d27f92cba1af9533401e",
-                                "username": "user2",
-                                "email": "email2@gmail.com",
+                                "username": "Travis Huerta",
+                                "email": "travishuerta@gmail.com",
                                 "role": "dev"
                             },
                             {
                                 "_id": "6407d29d92cba1af95334024",
-                                "username": "user3",
-                                "email": "email3@gmail.com",
+                                "username": "Marin Drake",
+                                "email": "marindrake@gmail.com",
                                 "role": "dev"
                             },
                             {
                                 "_id": "6407d2a592cba1af95334027",
-                                "username": "user4",
-                                "email": "email4@gmail.com",
+                                "username": "Regina Arroyo",
+                                "email": "reginaarroyo@gmail.com",
+                                "role": "dev"
+                            },
+                            {
+                                "_id": "6407d2a592cba1af95334027",
+                                "username": "Myah Gaines",
+                                "email": "myahgaines@gmail.com",
+                                "role": "dev"
+                            },
+                            {
+                                "_id": "6407d2a592cba1af95334027",
+                                "username": "Waylon Hurst",
+                                "email": "waylonhurst@gmail.com",
+                                "role": "dev"
+                            },
+                            {
+                                "_id": "6407d2a592cba1af95334027",
+                                "username": "Levi Coffey",
+                                "email": "levicoffey@gmail.com",
+                                "role": "dev"
+                            },
+                            {
+                                "_id": "6407d2a592cba1af95334027",
+                                "username": "Mekhi Mcdaniel",
+                                "email": "mekhimcdaniel@gmail.com",
+                                "role": "dev"
+                            },
+                            {
+                                "_id": "6407d2a592cba1af95334027",
+                                "username": "Mitchell Webb",
+                                "email": "mitchellwebb@gmail.com",
+                                "role": "dev"
+                            },
+                            {
+                                "_id": "6407d2a592cba1af95334027",
+                                "username": "Amara Black",
+                                "email": "amarablack@gmail.com",
+                                "role": "dev"
+                            },
+                            {
+                                "_id": "6407d2a592cba1af95334027",
+                                "username": "Maggie Singleton",
+                                "email": "maggiesingleton@gmail.com",
+                                "role": "dev"
+                            },
+                            {
+                                "_id": "6407d2a592cba1af95334027",
+                                "username": "Toby Rubio",
+                                "email": "tobyrubio@gmail.com",
+                                "role": "dev"
+                            },
+                            {
+                                "_id": "6407d2a592cba1af95334027",
+                                "username": "Kathleen Callahan",
+                                "email": "kathleencallahan@gmail.com",
                                 "role": "dev"
                             }
                         ],
                         "tickets": [
                             {
                                 "_id": "6403b096c70703cc30910d2c",
-                                "title": "Ticket 1",
+                                "title": "dashboard lag",
                                 "description": "Ticket 1 description",
                                 "createdBy": "64066ee557c03d1ecffc51ed",
                                 "dev": {
                                     "_id": "64066ee557c03d1ecffc51ed",
-                                    "username": "testuser",
+                                    "username": "Melissa Thompson",
                                     "email": "testuser@gmail.com",
                                     "role": "dev"
                                 },
@@ -156,16 +210,16 @@ const Projects = () => {
                                 "type": "Backend",
                                 "status": "open",
                                 "dateResolved": "2022-11-01T00:00:00.000Z",
-                                "priority": "low"
+                                "priority": "high"
                             },
                             {
                                 "_id": "6403b0a4c70703cc30910d2f",
-                                "title": "Ticket 2",
+                                "title": "got hacked",
                                 "description": "Ticket 2 description",
                                 "createdBy": "64066ee557c03d1ecffc51ed",
                                 "dev": {
                                     "_id": "64066ee557c03d1ecffc51ed",
-                                    "username": "testuser",
+                                    "username": "Travis Huerta",
                                     "email": "testuser@gmail.com",
                                     "role": "dev"
                                 },
@@ -174,16 +228,16 @@ const Projects = () => {
                                 "type": "Backend",
                                 "status": "open",
                                 "dateResolved": "2022-11-01T00:00:00.000Z",
-                                "priority": "low"
+                                "priority": "critical"
                             },
                             {
                                 "_id": "6403b25dc70703cc30910d5a",
-                                "title": "Ticket 3",
+                                "title": "projects page looks ugly",
                                 "description": "Ticket description",
                                 "createdBy": "64066ee557c03d1ecffc51ed",
                                 "dev": {
                                     "_id": "64066ee557c03d1ecffc51ed",
-                                    "username": "testuser",
+                                    "username": "Waylon Hurst",
                                     "email": "testuser@gmail.com",
                                     "role": "dev"
                                 },
@@ -192,16 +246,16 @@ const Projects = () => {
                                 "type": "Backend",
                                 "status": "open",
                                 "dateResolved": "2022-12-01T00:00:00.000Z",
-                                "priority": "low"
+                                "priority": "high"
                             },
                             {
                                 "_id": "6403b266c70703cc30910d5d",
-                                "title": "Ticket 4",
+                                "title": "finish profiles",
                                 "description": "Ticket description",
                                 "createdBy": "64066ee557c03d1ecffc51ed",
                                 "dev": {
                                     "_id": "64066ee557c03d1ecffc51ed",
-                                    "username": "testuser",
+                                    "username": "Waylon Hurst",
                                     "email": "testuser@gmail.com",
                                     "role": "dev"
                                 },
@@ -210,16 +264,16 @@ const Projects = () => {
                                 "type": "Backend",
                                 "status": "open",
                                 "dateResolved": "2022-12-01T00:00:00.000Z",
-                                "priority": "low"
+                                "priority": "medium"
                             },
                             {
                                 "_id": "6403b269c70703cc30910d60",
-                                "title": "Ticket 5",
+                                "title": "graphs ui",
                                 "description": "Ticket description",
                                 "createdBy": "64066ee557c03d1ecffc51ed",
                                 "dev": {
                                     "_id": "64066ee557c03d1ecffc51ed",
-                                    "username": "testuser",
+                                    "username": "Mekhi Mcdaniel",
                                     "email": "testuser@gmail.com",
                                     "role": "dev"
                                 },
@@ -228,16 +282,16 @@ const Projects = () => {
                                 "type": "Backend",
                                 "status": "open",
                                 "dateResolved": "2022-12-01T00:00:00.000Z",
-                                "priority": "low"
+                                "priority": "medium"
                             },
                             {
                                 "_id": "6403b26cc70703cc30910d63",
-                                "title": "Ticket 6",
+                                "title": "projects won't load",
                                 "description": "Ticket description",
                                 "createdBy": "64066ee557c03d1ecffc51ed",
                                 "dev": {
                                     "_id": "64066ee557c03d1ecffc51ed",
-                                    "username": "testuser",
+                                    "username": "Mekhi Mcdaniel",
                                     "email": "testuser@gmail.com",
                                     "role": "dev"
                                 },
@@ -250,12 +304,12 @@ const Projects = () => {
                             },
                             {
                                 "_id": "6403b270c70703cc30910d66",
-                                "title": "Ticket 7",
+                                "title": "messages pages",
                                 "description": "Ticket description",
                                 "createdBy": "64066ee557c03d1ecffc51ed",
                                 "dev": {
                                     "_id": "64066ee557c03d1ecffc51ed",
-                                    "username": "testuser",
+                                    "username": "Regina Arroyo",
                                     "email": "testuser@gmail.com",
                                     "role": "dev"
                                 },
@@ -268,12 +322,12 @@ const Projects = () => {
                             },
                             {
                                 "_id": "6403b27dc70703cc30910d69",
-                                "title": "Ticket 8",
+                                "title": "logo",
                                 "description": "Ticket description",
                                 "createdBy": "64066ee557c03d1ecffc51ed",
                                 "dev": {
                                     "_id": "64066ee557c03d1ecffc51ed",
-                                    "username": "testuser",
+                                    "username": "Melissa Thompson",
                                     "email": "testuser@gmail.com",
                                     "role": "dev"
                                 },
@@ -286,12 +340,12 @@ const Projects = () => {
                             },
                             {
                                 "_id": "6403b280c70703cc30910d6c",
-                                "title": "Ticket 9",
+                                "title": "page stutter",
                                 "description": "Ticket description",
                                 "createdBy": "64066ee557c03d1ecffc51ed",
                                 "dev": {
                                     "_id": "64066ee557c03d1ecffc51ed",
-                                    "username": "testuser",
+                                    "username": "Melissa Thompson",
                                     "email": "testuser@gmail.com",
                                     "role": "dev"
                                 },
@@ -300,16 +354,16 @@ const Projects = () => {
                                 "type": "Backend",
                                 "status": "open",
                                 "dateResolved": "2023-01-01T00:00:00.000Z",
-                                "priority": "medium"
+                                "priority": "low"
                             },
                             {
                                 "_id": "6403b284c70703cc30910d6f",
-                                "title": "Ticket 10",
+                                "title": "adding tickets",
                                 "description": "Ticket description",
                                 "createdBy": "64066ee557c03d1ecffc51ed",
                                 "dev": {
                                     "_id": "64066ee557c03d1ecffc51ed",
-                                    "username": "testuser",
+                                    "username": "Amara Black",
                                     "email": "testuser@gmail.com",
                                     "role": "dev"
                                 },
@@ -322,12 +376,12 @@ const Projects = () => {
                             },
                             {
                                 "_id": "6403b28dc70703cc30910d72",
-                                "title": "Ticket 11",
+                                "title": "finish users page",
                                 "description": "Ticket description",
                                 "createdBy": "64066ee557c03d1ecffc51ed",
                                 "dev": {
                                     "_id": "64066ee557c03d1ecffc51ed",
-                                    "username": "testuser",
+                                    "username": "Toby Rubio",
                                     "email": "testuser@gmail.com",
                                     "role": "dev"
                                 },
@@ -340,12 +394,12 @@ const Projects = () => {
                             },
                             {
                                 "_id": "6403b294c70703cc30910d75",
-                                "title": "Ticket 12",
+                                "title": "search bar",
                                 "description": "Ticket description",
                                 "createdBy": "64066ee557c03d1ecffc51ed",
                                 "dev": {
                                     "_id": "64066ee557c03d1ecffc51ed",
-                                    "username": "testuser",
+                                    "username": "Toby Rubio",
                                     "email": "testuser@gmail.com",
                                     "role": "dev"
                                 },
@@ -354,7 +408,7 @@ const Projects = () => {
                                 "type": "Backend",
                                 "status": "open",
                                 "dateResolved": "2023-03-01T00:00:00.000Z",
-                                "priority": "medium"
+                                "priority": "high"
                             }
                         ],
                         "createdAt": "2023-03-09T23:28:48.454Z",
@@ -364,30 +418,30 @@ const Projects = () => {
                     {
                         "_id": "6410461202fdff6e15ae0e12",
                         "title": "Weather Tracker",
-                        "description": "Tells the weather in real time",
+                        "description": "Responsive real time weather tracking application. Used for deciding whether or not to wear a jacket.",
                         "devs": [
                             {
                                 "_id": "640d8066220d79310b7ea2ea",
-                                "username": "user5",
-                                "email": "email5@gmail.com",
-                                "role": "dev"
+                                "username": "Demarcus Caldwell",
+                                "email": "demarcuscladwell@gmail.com",
+                                "role": "senior dev"
                             },
                             {
                                 "_id": "640d806b220d79310b7ea2ed",
-                                "username": "user6",
-                                "email": "email6@gmail.com",
+                                "username": "Damian Hines",
+                                "email": "damianhines@gmail.com",
                                 "role": "dev"
                             }
                         ],
                         "tickets": [
                             {
                                 "_id": "64119386c9845653a1ead1d7",
-                                "title": "Test Ticket 1",
+                                "title": "logo colors",
                                 "description": "test",
                                 "createdBy": "64066ee557c03d1ecffc51ed",
                                 "dev": {
                                     "_id": "640d8066220d79310b7ea2ea",
-                                    "username": "user5",
+                                    "username": "Demarcus Caldwell",
                                     "email": "email5@gmail.com",
                                     "role": "dev"
                                 },
@@ -400,12 +454,12 @@ const Projects = () => {
                             },
                             {
                                 "_id": "641193d7c9845653a1ead1ee",
-                                "title": "Test Ticket 2",
+                                "title": "fix tickets",
                                 "description": "test",
                                 "createdBy": "64066ee557c03d1ecffc51ed",
                                 "dev": {
                                     "_id": "640d806b220d79310b7ea2ed",
-                                    "username": "user6",
+                                    "username": "Demarcus Caldwell",
                                     "email": "email6@gmail.com",
                                     "role": "dev"
                                 },
@@ -418,12 +472,12 @@ const Projects = () => {
                             },
                             {
                                 "_id": "641194a2c9845653a1ead215",
-                                "title": "Test Ticket 3",
+                                "title": "update site wide colors",
                                 "description": "test",
                                 "createdBy": "64066ee557c03d1ecffc51ed",
                                 "dev": {
                                     "_id": "640d8066220d79310b7ea2ea",
-                                    "username": "user5",
+                                    "username": "Demarcus Caldwell",
                                     "email": "email5@gmail.com",
                                     "role": "dev"
                                 },
@@ -442,36 +496,36 @@ const Projects = () => {
                     {
                         "_id": "6410462802fdff6e15ae0e1a",
                         "title": "Messaging App",
-                        "description": "Message anyone on this app",
+                        "description": "Cross platform messaging app used for communicating between large teams for projects.",
                         "devs": [
                             {
                                 "_id": "641190d1c9845653a1ead012",
-                                "username": "user7",
-                                "email": "email7@gmail.com",
+                                "username": "Dominic Campos",
+                                "email": "cominiccampos@gmail.com",
                                 "role": "dev"
                             },
                             {
                                 "_id": "641190d9c9845653a1ead015",
-                                "username": "user8",
-                                "email": "email8@gmail.com",
+                                "username": "Leonardo Reese",
+                                "email": "leonardoreese@gmail.com",
                                 "role": "dev"
                             },
                             {
                                 "_id": "641190e0c9845653a1ead018",
-                                "username": "user9",
-                                "email": "email9@gmail.com",
+                                "username": "Angelique Melton",
+                                "email": "angeliquemelton@gmail.com",
                                 "role": "dev"
                             }
                         ],
                         "tickets": [
                             {
                                 "_id": "64119602c9845653a1ead269",
-                                "title": "test 1",
+                                "title": "login page",
                                 "description": "test",
                                 "createdBy": "64066ee557c03d1ecffc51ed",
                                 "dev": {
                                     "_id": "641190d1c9845653a1ead012",
-                                    "username": "user7",
+                                    "username": "Angelique Melton",
                                     "email": "email7@gmail.com",
                                     "role": "dev"
                                 },
@@ -484,120 +538,120 @@ const Projects = () => {
                             },
                             {
                                 "_id": "6411960ec9845653a1ead278",
-                                "title": "test 2",
+                                "title": "test projects",
                                 "description": "test",
                                 "createdBy": "64066ee557c03d1ecffc51ed",
                                 "dev": {
                                     "_id": "641190d9c9845653a1ead015",
-                                    "username": "user8",
+                                    "username": "Leonardo Reese",
                                     "email": "email8@gmail.com",
                                     "role": "dev"
                                 },
                                 "dateCreated": "2023-03-15T09:55:02.209Z",
                                 "dueDate": "2023-04-27T00:00:00.000Z",
                                 "type": "bug",
-                                "priority": "low",
+                                "priority": "medium",
                                 "status": "open",
                                 "dateResolved": null
                             },
                             {
                                 "_id": "64119618c9845653a1ead287",
-                                "title": "test 3",
+                                "title": "improve performance site wide",
                                 "description": "test",
                                 "createdBy": "64066ee557c03d1ecffc51ed",
                                 "dev": {
                                     "_id": "641190d1c9845653a1ead012",
-                                    "username": "user7",
+                                    "username": "Leonardo Reese",
                                     "email": "email7@gmail.com",
                                     "role": "dev"
                                 },
                                 "dateCreated": "2023-03-15T09:55:02.209Z",
                                 "dueDate": "2023-04-05T00:00:00.000Z",
                                 "type": "bug",
-                                "priority": "low",
+                                "priority": "high",
                                 "status": "open",
                                 "dateResolved": null
                             },
                             {
                                 "_id": "64119622c9845653a1ead296",
-                                "title": "test 4",
+                                "title": "got hacked",
                                 "description": "test",
                                 "createdBy": "64066ee557c03d1ecffc51ed",
                                 "dev": {
                                     "_id": "641190d9c9845653a1ead015",
-                                    "username": "user8",
+                                    "username": "Dominic Campos",
                                     "email": "email8@gmail.com",
                                     "role": "dev"
                                 },
                                 "dateCreated": "2023-03-15T09:55:02.209Z",
                                 "dueDate": "2023-03-31T00:00:00.000Z",
                                 "type": "ui",
-                                "priority": "low",
+                                "priority": "critical",
                                 "status": "open",
                                 "dateResolved": null
                             },
                             {
                                 "_id": "64119637c9845653a1ead2a5",
-                                "title": "test 6",
+                                "title": "remove projects",
                                 "description": "test",
                                 "createdBy": "64066ee557c03d1ecffc51ed",
                                 "dev": {
                                     "_id": "641190d9c9845653a1ead015",
-                                    "username": "user8",
+                                    "username": "Dominic Campos",
                                     "email": "email8@gmail.com",
                                     "role": "dev"
                                 },
                                 "dateCreated": "2023-03-15T09:55:02.209Z",
                                 "dueDate": "2023-03-30T00:00:00.000Z",
                                 "type": "ui",
-                                "priority": "low",
+                                "priority": "medium",
                                 "status": "open",
                                 "dateResolved": null
                             },
                             {
                                 "_id": "64119641c9845653a1ead2b4",
-                                "title": "test 6",
+                                "title": "pass props down to projects",
                                 "description": "test",
                                 "createdBy": "64066ee557c03d1ecffc51ed",
                                 "dev": {
                                     "_id": "641190d1c9845653a1ead012",
-                                    "username": "user7",
+                                    "username": "Dominic Campos",
                                     "email": "email7@gmail.com",
                                     "role": "dev"
                                 },
                                 "dateCreated": "2023-03-15T09:55:02.209Z",
                                 "dueDate": "2023-03-31T00:00:00.000Z",
                                 "type": "ui",
-                                "priority": "low",
+                                "priority": "high",
                                 "status": "open",
                                 "dateResolved": null
                             },
                             {
                                 "_id": "6411964dc9845653a1ead2c3",
-                                "title": "test 7",
+                                "title": "test application",
                                 "description": "test",
                                 "createdBy": "64066ee557c03d1ecffc51ed",
                                 "dev": {
                                     "_id": "641190d1c9845653a1ead012",
-                                    "username": "user7",
+                                    "username": "Dominic Campos",
                                     "email": "email7@gmail.com",
                                     "role": "dev"
                                 },
                                 "dateCreated": "2023-03-15T09:55:02.209Z",
                                 "dueDate": "2023-03-30T00:00:00.000Z",
                                 "type": "bug",
-                                "priority": "low",
+                                "priority": "high",
                                 "status": "open",
                                 "dateResolved": null
                             },
                             {
                                 "_id": "64119de4c9845653a1ead8fb",
-                                "title": "test 8",
+                                "title": "paginations",
                                 "description": "test",
                                 "createdBy": "64066ee557c03d1ecffc51ed",
                                 "dev": {
                                     "_id": "641190d1c9845653a1ead012",
-                                    "username": "user7",
+                                    "username": "Leonardo Reese",
                                     "email": "email7@gmail.com",
                                     "role": "dev"
                                 },
@@ -610,30 +664,30 @@ const Projects = () => {
                             },
                             {
                                 "_id": "64119df1c9845653a1ead90a",
-                                "title": "test 9",
+                                "title": "loading performance",
                                 "description": "test",
                                 "createdBy": "64066ee557c03d1ecffc51ed",
                                 "dev": {
                                     "_id": "641190d1c9845653a1ead012",
-                                    "username": "user7",
+                                    "username": "Leonardo Reese",
                                     "email": "email7@gmail.com",
                                     "role": "dev"
                                 },
                                 "dateCreated": "2023-03-15T10:27:35.368Z",
                                 "dueDate": "2023-03-10T00:00:00.000Z",
                                 "type": "bug",
-                                "priority": "low",
+                                "priority": "medium",
                                 "status": "open",
                                 "dateResolved": null
                             },
                             {
                                 "_id": "64119dfdc9845653a1ead919",
-                                "title": "test 10",
+                                "title": "fix ui",
                                 "description": "test",
                                 "createdBy": "64066ee557c03d1ecffc51ed",
                                 "dev": {
                                     "_id": "641190d1c9845653a1ead012",
-                                    "username": "user7",
+                                    "username": "Dominic Campos",
                                     "email": "email7@gmail.com",
                                     "role": "dev"
                                 },
@@ -652,48 +706,48 @@ const Projects = () => {
                     {
                         "_id": "641189cec9845653a1eacfc2",
                         "title": "Social Network ",
-                        "description": "App like twitter",
+                        "description": "Twitter clone but actually good. Elon take notes",
                         "devs": [
                             {
                                 "_id": "641190e6c9845653a1ead01b",
-                                "username": "user10",
-                                "email": "email10@gmail.com",
+                                "username": "Morgan Moon",
+                                "email": "morganmoon@gmail.com",
                                 "role": "dev"
                             },
                             {
                                 "_id": "641190ebc9845653a1ead01e",
-                                "username": "user11",
-                                "email": "email11@gmail.com",
+                                "username": "Sage Luna",
+                                "email": "sageluna@gmail.com",
                                 "role": "dev"
                             },
                             {
                                 "_id": "641190f0c9845653a1ead021",
-                                "username": "user12",
-                                "email": "email12@gmail.com",
+                                "username": "Shane Waller",
+                                "email": "shanewaller@gmail.com",
                                 "role": "dev"
                             },
                             {
                                 "_id": "641190f6c9845653a1ead024",
-                                "username": "user13",
-                                "email": "email13@gmail.com",
+                                "username": "Casey Ramos",
+                                "email": "caseyramos@gmail.com",
                                 "role": "dev"
                             },
                             {
                                 "_id": "641190fbc9845653a1ead027",
-                                "username": "user14",
-                                "email": "email14@gmail.com",
+                                "username": "Alan Hendricks",
+                                "email": "alan hendricks@gmail.com",
                                 "role": "dev"
                             }
                         ],
                         "tickets": [
                             {
                                 "_id": "64119edac9845653a1ead991",
-                                "title": "test 1",
+                                "title": "user models update",
                                 "description": "test",
                                 "createdBy": "64066ee557c03d1ecffc51ed",
                                 "dev": {
                                     "_id": "641190e6c9845653a1ead01b",
-                                    "username": "user10",
+                                    "username": "Morgan Moon",
                                     "email": "email10@gmail.com",
                                     "role": "dev"
                                 },
@@ -706,12 +760,12 @@ const Projects = () => {
                             },
                             {
                                 "_id": "64119eeac9845653a1ead9a0",
-                                "title": "test 2",
+                                "title": "messages performance",
                                 "description": "test",
                                 "createdBy": "64066ee557c03d1ecffc51ed",
                                 "dev": {
                                     "_id": "641190e6c9845653a1ead01b",
-                                    "username": "user10",
+                                    "username": "Morgan Moon",
                                     "email": "email10@gmail.com",
                                     "role": "dev"
                                 },
@@ -724,12 +778,12 @@ const Projects = () => {
                             },
                             {
                                 "_id": "64119ef7c9845653a1ead9af",
-                                "title": "test 3",
+                                "title": "improve landing page",
                                 "description": "test",
                                 "createdBy": "64066ee557c03d1ecffc51ed",
                                 "dev": {
                                     "_id": "641190f0c9845653a1ead021",
-                                    "username": "user12",
+                                    "username": "Sage Luna",
                                     "email": "email12@gmail.com",
                                     "role": "dev"
                                 },
@@ -748,12 +802,12 @@ const Projects = () => {
                     {
                         "_id": "6411900ac9845653a1eacfe3",
                         "title": "Reddit Clone",
-                        "description": "A clone of reddit\n",
+                        "description": "A online forum used for world wide discussion. A reddit clone.",
                         "devs": [
                             {
                                 "_id": "64066ee557c03d1ecffc51ed",
-                                "username": "testuser",
-                                "email": "testuser@gmail.com",
+                                "username": "Giovanny Fitzpatrick",
+                                "email": "giovannyfitzpatrick@gmail.com",
                                 "role": "dev",
                                 "image": null
                             }
@@ -761,12 +815,12 @@ const Projects = () => {
                         "tickets": [
                             {
                                 "_id": "64119f0ac9845653a1ead9dd",
-                                "title": "test",
+                                "title": "authentication page",
                                 "description": "test",
                                 "createdBy": "64066ee557c03d1ecffc51ed",
                                 "dev": {
                                     "_id": "64066ee557c03d1ecffc51ed",
-                                    "username": "testuser",
+                                    "username": "Giovanny Fitzpatrick",
                                     "email": "testuser@gmail.com",
                                     "role": "dev"
                                 },
