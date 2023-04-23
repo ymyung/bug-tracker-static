@@ -4,7 +4,6 @@ import {
     Route,
     Navigate
 } from "react-router-dom";
-import { ChakraProvider } from '@chakra-ui/react'
 import { useAuthContext } from "./hooks/useAuthContext";
 
 import Navbar from "./components/Navbar";
@@ -24,7 +23,6 @@ function App() {
   const { user } = useAuthContext()
 
   return (
-    <ChakraProvider>
       <Router>
         <div className="preloader"></div>
         {user && <Navbar />}
@@ -43,7 +41,6 @@ function App() {
           </Routes>
         </div>
       </Router>
-    </ChakraProvider>
   );
 }
 
